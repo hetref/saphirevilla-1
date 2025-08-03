@@ -7,126 +7,13 @@
    <head>
         <title>Sapphire Villas by 42 Estates in Whitefield, Bengaluru | Payment Plan</title>
         
-
-        <link rel="stylesheet" type="text/css" href="purestyle.css" />  
-        <link rel="preload" href="purestyle.css" as="style" crossorigin="">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"> 
-
-        <style>
-        :root {--colorPrimary: #be8315;--colorSecondary: #025c8e; --colorBtn: #ffffff;}
-        @font-face { font-family: 'Roboto'; src: url('fonts/Roboto-Regular.woff2') format('woff2'); font-weight: normal; }
-        @font-face {font-family: 'Roboto'; src: url('fonts/Roboto-Bold.woff2') format('woff2'); font-weight: bold; }
-        #loader {width: 100vw;height: 100vh;background-color: rgba(255, 255, 255, 1);position: fixed;top: 0;left: 0;z-index: 1040;}
-        .loader-text {display: block;text-align: center;color: #d7d7d7;font-family: Roboto, sans-serif;position: absolute;top: 50%;left: 50%;-webkit-transform: translate(-50%, -50%);-moz-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);-o-transform: translate(-50%, -50%);transform: translate(-50%, -50%);}
-        @keyframes loader {
-        0% {filter: grayscale(0);}
-        50% {filter: grayscale(100%);}
-        100% {filter: grayscale(0);}}
-        .pload {display: none;}
-        .iti__flag-container {display: none;}
-        section#mymap {height: 540px;}
-        button.btn.btn-sm.btn-outline-info.sectio-bro-btn.overflow-hidden.enqModal {margin-bottom: 15px;}
-        input#submitBtn {margin: 15px 0;}
-        .textcolor{color:#fff;}
-        button.btn.btn-info.micro-form-btn.effetMoveGradient.submitBtn.enqModal {margin-bottom: 15px;}
-        a.drift-open-chat {color: #fff;}
-        p{text-align: justify;}
-
-        /*--for thank you page --*/
-        .thankyou-text p {text-align: center !important;}
-        
-        /* Additional styles for responsive design */
-        .card-d-custom{ width: 95%; justify-content: center; text-align: center; margin: 0 auto 15px; }
-        
-        iframe {width: 100%;height: 38vh;border: 2px solid #d7d7d7;}
-        @media only screen and (max-width: 1024px) {iframe {width: 100%;height: 32vh;border: 2px solid #d7d7d7;}}
-        @media only screen and (max-width: 992px) {iframe {width: 100%;height: 18vh;border: 2px solid #d7d7d7;}}
-        @media only screen and (max-width: 800px) {iframe {width: 100%;height: 26vh;border: 2px solid #d7d7d7;}}
-        @media only screen and (max-width: 768px) {iframe {width: 100%;height: 20vh;border: 2px solid #d7d7d7;}}
-        @media only screen and (max-width: 500px) {iframe {width: 100%;height: 50vh;border: 2px solid #d7d7d7;}}
-        
-        .action-icon img{ height: 22px; width: auto; margin-right: 7px; }
-        .ft-main{ display:flex; justify-content:center; align-items:center; width:100%; padding:0% 2%; font-size:14px; }
-        .ft-left{ width:82%; }
-        .ft-right{ width:16%; }
-        .acceptcookies{ font-size: 16px; padding: 3px 30px; }
-        @media (min-width: 1920px) and (max-width: 2560px)  {
-        .ft-main{ font-size:19px; }
-        }
-        @media (min-width: 2561px) and (max-width: 5120px)  {
-        .ft-main{ font-size:36px; }
-        }
-        @media (min-width: 1920px) and (max-width: 5120px)  {
-        .acceptcookies{ font-size: 46px; padding: 3px 30px; }
-        }
-        @media (min-width: 320px) and (max-width: 767px)  {
-        .ft-main{ display:block; }
-        .ft-left{ width:100%; text-align:justify; }
-        .ft-right{ width:100%; }
-        .acceptcookies{ margin-top: 10px; margin-left:0px!important; }
-        }
-        
-        /* Navigation icon styles */
-        .nav-icon {
-            margin-right: 5px;
-            font-size: 16px;
-        }
-        
-        .loc-icon {
-            margin-right: 10px;
-            font-size: 14px;
-        }
-        
-        .action-icon {
-            margin-right: 5px;
-        }
-        
-        /* Custom icon colors */
-        .color-primary {
-            color: var(--colorPrimary) !important;
-        }
-        
-        /* Gallery styles */
-        .gallery-thumb {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 8px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            cursor: pointer;
-        }
-        
-        .gallery-thumb:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-        }
-        
-        /* Fancybox customization */
-        .fancybox-toolbar {
-            background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
-        }
-        
-        .fancybox-caption {
-            background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
-            color: #fff;
-            font-size: 16px;
-            padding: 20px;
-        }
-        </style>
-        <!-- Drift Start -->
-
-                <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16749809340"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-16749809340');
-</script>           </head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+       
+ </head>
 
 
    <body data-spy="scroll" data-target="#navbarNav">
@@ -158,7 +45,6 @@
 
 
       <main class="pload">
-         <style> .card-d-custom{ width: 95%; justify-content: center; text-align: center; margin: 0 auto 15px;  } </style>
 
          <div id="home" class="carousel slide micro-main-slider" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -196,7 +82,7 @@
             </div>
             <h1 class="pro-title">
                 Sapphire Villas by 42 Estates            </h1>
-            <div style="flex-wrap: wrap; display: inline-flex;padding-bottom: 10px;">
+            <div class="pro-details-wrapper">
                <span class="pro-add">
                    Sadarmangala, Whitefield, Bengaluru               </span>
                
@@ -221,9 +107,9 @@
                
             BBMP Approved & RERA Registered<br> Exclusive 4BHK Villas <br> Limited Edition Community</span>
             </span>  </span> 
-            <span class="d-block" style="font-size: 14px; width: 100%; background: transparent; font-weight: bold; text-align: center; color: #fff;">
+            <span class="d-block pro-price-subtitle">
             </span>
-            <span class="pro-tag-line"> Ultra-Luxurious<b> 4 BHK Villas</b>  Starting at</span> <span class="pro-price"><font class='WebRupee'>Rs.</font> Contact for Price <small style="font-size:16px;">
+            <span class="pro-tag-line"> Ultra-Luxurious<b> 4 BHK Villas</b>  Starting at</span> <span class="pro-price"><font class='WebRupee'>Rs.</font> Contact for Price <small>
             Onwards     
                 </small> </span>
             <button class="btn btn-info micro-form-btn enqModal effetMoveGradient effectScale" data-form="lg" data-title="Download Brochure" data-btn="Download Now" data-enquiry="Download Brochure Left Panel" data-redirect="enquiry" data-toggle="modal" data-target="#enqModal">
@@ -233,28 +119,28 @@
 
 
          <section class="section shadow-sm lazyload" id="overview">
-            <h2 class="d-block section-heading color-primary text-capitalize">Welcome to Sapphire Villas by 42 Estates</h2>
+            <h2 class="d-block section-heading color-primary text-capitalize">Bangalore's Most Awaited Luxury Villas – Coming Soon to Whitefield</h2>
 
             <div class="show-read-less" id="more">
             <p class="desktopview mt-3  mb-4">
                <p>
-	<strong>Discover an Exclusive Enclave of Ultra-Luxurious 4BHK Villas</strong></p>
+	<strong>Experience the Perfect Balance of City Energy and Boutique Tranquility</strong></p>
 <p>
-	Coming soon to Sadarmangala, Whitefield, Bengaluru. Experience a rare blend of tranquility and urban connectivity—where each villa is a masterpiece of contemporary elegance and timeless sophistication designed for those who desire a harmonious, spacious, and serene lifestyle.</p>
+	Discover a life of refined luxury at Sapphire Villas, an exclusive residential enclave nestled in the tranquil neighborhood of Sadarmangala, Whitefield, Bangalore. Designed for those who seek the perfect blend of sophistication and comfort, this limited collection of bespoke 4BHK villas offers a refined escape from the city's chaos while keeping you seamlessly connected to urban conveniences.</p>
             </p>
-            <a href="JavaScript:Void(0);" class="btn btn-link btn-sm" id="morebtn" onclick="readmorefn();" style="color: #000;">
+            <a href="JavaScript:Void(0);" class="btn btn-link btn-sm read-more-btn" id="morebtn" onclick="readmorefn();">
                Read More 
             </a>
             </div>
             <div class="clearfix"></div>
 
-            <div class="show-read-more mt-3  mb-4" id="less" style="display: none">
+            <div class="show-read-more mt-3 mb-4" id="less">
             <p>
 	<strong>The Perfect Balance of Sophistication & Comfort</strong></p>
 <p>
 	Sapphire Villas stands out as a limited-edition community offering tasteful living with BBMP Approved & RERA Registered status (PRM/KA/RERA/1251/446/PR/130924/007016). The project features exclusive 4BHK Villas ranging from 3,500–5,000 sq.ft. with expansive living areas, high-end finishes, natural light with large windows, private gardens, terraces, and balconies.</p>
 <p>
-	Each villa is curated for privacy, luxury, and convenience. Modern interiors feature marble flooring for living rooms, wooden floors in master bedrooms, and energy-efficient features like solar water provision. The community offers 40+ world-class amenities including clubhouse, swimming pool, gym, jogging track, tennis courts, and 24x7 security. Located in Sadarmangala, Whitefield, the project is just 5 minutes from top-rated schools, malls, hospitals, and IT Parks with quick access to upcoming Metro and business hubs. <strong>Sapphire Villas by 42 Estates</strong> offers a peaceful environment, yet well-connected to Bengaluru's vibrant core.</p>            <a href="JavaScript:Void(0);" class="btn btn-link btn-sm" id="lessbtn" onclick="readlessfn();" style="color: #000;">Read Less </a> 
+	Each villa is curated for privacy, luxury, and convenience. Modern interiors feature marble flooring for living rooms, wooden floors in master bedrooms, and energy-efficient features like solar water provision. The community offers 40+ world-class amenities including clubhouse, swimming pool, gym, jogging track, tennis courts, and 24x7 security. Located in Sadarmangala, Whitefield, the project is just 5 minutes from top-rated schools, malls, hospitals, and IT Parks with quick access to upcoming Metro and business hubs. <strong>Sapphire Villas by 42 Estates</strong> offers a peaceful environment, yet well-connected to Bengaluru's vibrant core.</p>            <a href="JavaScript:Void(0);" class="btn btn-link btn-sm read-less-btn" id="lessbtn" onclick="readlessfn();">Read Less </a> 
             </div>
             <button class="btn btn-info micro-form-btn effetMoveGradient enqModal" data-form="md" data-title="Download Brochure" data-btn="Download Now" data-enquiry="Download Brochure Welcome Text" data-redirect="brochure" data-redirect-file="brochure.pdf" data-toggle="modal" data-target="#enqModal">
             <span class="d-inline-block fas fa-download mr-1 animated slideInDown infinite"></span> Download Brochure
@@ -330,7 +216,7 @@
                                                 <a href="#" class="text-decoration-none enqModal" data-form="lg" data-title="Send me plan details" data-btn="Send Now" data-enquiry="Get Master Plan" data-redirect="enquiry" data-toggle="modal" data-target="#enqModal">
                     <div class="at-property-item mt-1">
                         <div class="at-property-img master-plan text-center">
-                            <img alt="Master Plan" data-sizes="auto" class="lazyload shadow-sm border border-grey img-lazy" src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80"  data-src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" style='filter: blur(3px);'>              
+                            <img alt="Master Plan" data-sizes="auto" class="lazyload shadow-sm border border-grey img-lazy blurred-image" src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80"  data-src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80">              
                             <div class="at-property-overlayer"></div>
                             <span class="at-property-btn">View Master Plan </span>
                         </div>
@@ -339,7 +225,7 @@
                                                                                                 <a href="#" class="text-decoration-none enqModal" data-form="lg" data-title="Send me plan details" data-btn="Send Now" data-enquiry="Get Master Plan" data-redirect="enquiry" data-toggle="modal" data-target="#enqModal">
                     <div class="at-property-item mt-1">
                         <div class="at-property-img master-plan text-center">
-                            <img alt="Floor Plan" data-sizes="auto" class="lazyload shadow-sm border border-grey img-lazy" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80"  data-src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" style='filter: blur(3px);'>              
+                            <img alt="Floor Plan" data-sizes="auto" class="lazyload shadow-sm border border-grey img-lazy blurred-image" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80"  data-src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80">              
                             <div class="at-property-overlayer"></div>
                             <span class="at-property-btn">View Floor Plan </span>
                         </div>
@@ -348,7 +234,7 @@
                                                                 <a href="#" class="text-decoration-none enqModal" data-form="lg" data-title="Send me plan details" data-btn="Send Now" data-enquiry="Get Master Plan" data-redirect="enquiry" data-toggle="modal" data-target="#enqModal">
                     <div class="at-property-item mt-1">
                         <div class="at-property-img master-plan text-center">
-                            <img alt="Site Plan" data-sizes="auto" class="lazyload shadow-sm border border-grey img-lazy" src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80"  data-src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" style='filter: blur(3px);'>              
+                            <img alt="Site Plan" data-sizes="auto" class="lazyload shadow-sm border border-grey img-lazy blurred-image" src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80"  data-src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80">              
                             <div class="at-property-overlayer"></div>
                             <span class="at-property-btn">View Site Plan </span>
                         </div>
@@ -357,7 +243,7 @@
                                                                 <a href="#" class="text-decoration-none enqModal" data-form="lg" data-title="Send me plan details" data-btn="Send Now" data-enquiry="Get Master Plan" data-redirect="enquiry" data-toggle="modal" data-target="#enqModal">
                     <div class="at-property-item mt-1">
                         <div class="at-property-img master-plan text-center">
-                            <img alt="Villa Layout" data-sizes="auto" class="lazyload shadow-sm border border-grey img-lazy" src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80"  data-src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" style='filter: blur(3px);'>              
+                            <img alt="Villa Layout" data-sizes="auto" class="lazyload shadow-sm border border-grey img-lazy blurred-image" src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80"  data-src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80">              
                             <div class="at-property-overlayer"></div>
                             <span class="at-property-btn">View Villa Layout </span>
                         </div>
@@ -366,7 +252,7 @@
                                                                 <a href="#" class="text-decoration-none enqModal" data-form="lg" data-title="Send me plan details" data-btn="Send Now" data-enquiry="Get Master Plan" data-redirect="enquiry" data-toggle="modal" data-target="#enqModal">
                     <div class="at-property-item mt-1">
                         <div class="at-property-img master-plan text-center">
-                            <img alt="Landscape Plan" data-sizes="auto" class="lazyload shadow-sm border border-grey img-lazy" src="https://images.unsplash.com/photo-1503594384566-461fe158e797?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80"  data-src="https://images.unsplash.com/photo-1503594384566-461fe158e797?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" style='filter: blur(3px);'>              
+                            <img alt="Landscape Plan" data-sizes="auto" class="lazyload shadow-sm border border-grey img-lazy blurred-image" src="https://images.unsplash.com/photo-1503594384566-461fe158e797?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80"  data-src="https://images.unsplash.com/photo-1503594384566-461fe158e797?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80">              
                             <div class="at-property-overlayer"></div>
                             <span class="at-property-btn">View Landscape Plan </span>
                         </div>
@@ -375,7 +261,7 @@
                                                                 <a href="#" class="text-decoration-none enqModal" data-form="lg" data-title="Send me plan details" data-btn="Send Now" data-enquiry="Get Master Plan" data-redirect="enquiry" data-toggle="modal" data-target="#enqModal">
                     <div class="at-property-item mt-1">
                         <div class="at-property-img master-plan text-center">
-                            <img alt="Elevation Plan" data-sizes="auto" class="lazyload shadow-sm border border-grey img-lazy" src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80"  data-src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" style='filter: blur(3px);'>              
+                            <img alt="Elevation Plan" data-sizes="auto" class="lazyload shadow-sm border border-grey img-lazy blurred-image" src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80"  data-src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80">              
                             <div class="at-property-overlayer"></div>
                             <span class="at-property-btn">View Elevation Plan </span>
                         </div>
@@ -384,7 +270,7 @@
                                                                                                                                 <a href="#" class="text-decoration-none enqModal" data-form="lg" data-title="Send me plan details" data-btn="Send Now" data-enquiry="Get Master Plan" data-redirect="enquiry" data-toggle="modal" data-target="#enqModal">
                     <div class="at-property-item mt-1">
                         <div class="at-property-img master-plan text-center">
-                            <img alt="3D Rendering" data-sizes="auto" class="lazyload shadow-sm border border-grey img-lazy" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80"  data-src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" style='filter: blur(3px);'>              
+                            <img alt="3D Rendering" data-sizes="auto" class="lazyload shadow-sm border border-grey img-lazy blurred-image" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80"  data-src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80">              
                             <div class="at-property-overlayer"></div>
                             <span class="at-property-btn">View 3D Rendering </span>
                         </div>
@@ -410,78 +296,78 @@
 
                         <div class="item-wrp">
               <div class="ami_sec">
-                 <img alt="Clubhouse" src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=450&q=80" loading="lazy" class="lazyload img-lazy" fetchpriority="low" style="width: 400px; height: 300px; border-radius: 8px; object-fit: cover;">
+                 <img alt="Clubhouse" src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=450&q=80" loading="lazy" class="lazyload img-lazy" fetchpriority="low" >
                  <p>Clubhouse</p>
               </div>
                
               <div class="ami_sec">
-                 <img alt="Swimming Pool" src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=450&q=80" loading="lazy" class="lazyload img-lazy" fetchpriority="low" style="width: 400px; height: 300px; border-radius: 8px; object-fit: cover;">
+                 <img alt="Swimming Pool" src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=450&q=80" loading="lazy" class="lazyload img-lazy" fetchpriority="low" >
                  <p>Swimming Pool</p>
               </div>
                           </div>
                         <div class="item-wrp">
               <div class="ami_sec">
-                 <img alt="Multi-purpose Hall" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=450&q=80" loading="lazy" class="lazyload img-lazy" fetchpriority="low" style="width: 400px; height: 300px; border-radius: 8px; object-fit: cover;">
+                 <img alt="Multi-purpose Hall" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=450&q=80" loading="lazy" class="lazyload img-lazy" fetchpriority="low" >
                  <p>Multi-purpose Hall</p>
               </div>
                
               <div class="ami_sec">
-                 <img alt="Gymnasium" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=450&q=80" loading="lazy" class="lazyload img-lazy" fetchpriority="low" style="width: 400px; height: 300px; border-radius: 8px; object-fit: cover;">
+                 <img alt="Gymnasium" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=450&q=80" loading="lazy" class="lazyload img-lazy" fetchpriority="low" >
                  <p>Gym & Outdoor Fitness</p>
               </div>
                           </div>
                         <div class="item-wrp">
               <div class="ami_sec">
-                 <img alt="Jogging Track" src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=450&q=80" loading="lazy" class="lazyload img-lazy" fetchpriority="low" style="width: 400px; height: 300px; border-radius: 8px; object-fit: cover;">
+                 <img alt="Jogging Track" src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=450&q=80" loading="lazy" class="lazyload img-lazy" fetchpriority="low" >
                  <p>Jogging Track & Yoga Lawn</p>
               </div>
                
               <div class="ami_sec">
-                 <img alt="Amphitheatre" src="https://images.unsplash.com/photo-1478147427282-58e87a120781?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=450&q=80" loading="lazy" class="lazyload img-lazy" fetchpriority="low" style="width: 400px; height: 300px; border-radius: 8px; object-fit: cover;">
+                 <img alt="Amphitheatre" src="https://images.unsplash.com/photo-1478147427282-58e87a120781?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=450&q=80" loading="lazy" class="lazyload img-lazy" fetchpriority="low" >
                  <p>Amphitheater</p>
               </div>
                           </div>
                         <div class="item-wrp">
               <div class="ami_sec">
-                 <img alt="Kids Play Area" src="https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=450&q=80" loading="lazy" class="lazyload img-lazy" fetchpriority="low" style="width: 400px; height: 300px; border-radius: 8px; object-fit: cover;">
+                 <img alt="Kids Play Area" src="https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=450&q=80" loading="lazy" class="lazyload img-lazy" fetchpriority="low" >
                  <p>Kids' Play Zones</p>
               </div>
                
               <div class="ami_sec">
-                 <img alt="Private Gardens" src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=450&q=80" loading="lazy" class="lazyload img-lazy" fetchpriority="low" style="width: 400px; height: 300px; border-radius: 8px; object-fit: cover;">
+                 <img alt="Private Gardens" src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=450&q=80" loading="lazy" class="lazyload img-lazy" fetchpriority="low" >
                  <p>Private Gardens</p>
               </div>
                           </div>
                         <div class="item-wrp">
               <div class="ami_sec">
-                 <img alt="Tennis Court" src="https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=450&q=80" loading="lazy" class="lazyload img-lazy" fetchpriority="low" style="width: 400px; height: 300px; border-radius: 8px; object-fit: cover;">
+                 <img alt="Tennis Court" src="https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=450&q=80" loading="lazy" class="lazyload img-lazy" fetchpriority="low" >
                  <p>Tennis & Basketball Courts</p>
               </div>
                
               <div class="ami_sec">
-                 <img alt="Indoor Games" src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=450&q=80" loading="lazy" class="lazyload img-lazy" fetchpriority="low" style="width: 400px; height: 300px; border-radius: 8px; object-fit: cover;">
+                 <img alt="Indoor Games" src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=450&q=80" loading="lazy" class="lazyload img-lazy" fetchpriority="low" >
                  <p>Indoor Games & Cafeteria</p>
               </div>
                           </div>
                         <div class="item-wrp">
               <div class="ami_sec">
-                 <img alt="Security" src="https://images.unsplash.com/photo-1560472354-612b3460bac8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=450&q=80" loading="lazy" class="lazyload img-lazy" fetchpriority="low" style="width: 400px; height: 300px; border-radius: 8px; object-fit: cover;">
+                 <img alt="Security" src="https://images.unsplash.com/photo-1560472354-612b3460bac8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=450&q=80" loading="lazy" class="lazyload img-lazy" fetchpriority="low" >
                  <p>24x7 Security & Intercom</p>
               </div>
                
               <div class="ami_sec">
-                 <img alt="Rain Water Harvesting" src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=450&q=80" loading="lazy" class="lazyload img-lazy" fetchpriority="low" style="width: 400px; height: 300px; border-radius: 8px; object-fit: cover;">
+                 <img alt="Rain Water Harvesting" src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=450&q=80" loading="lazy" class="lazyload img-lazy" fetchpriority="low" >
                  <p>Rainwater Harvesting</p>
               </div>
                           </div>
                         <div class="item-wrp">
               <div class="ami_sec">
-                 <img alt="Power Backup" src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=450&q=80" loading="lazy" class="lazyload img-lazy" fetchpriority="low" style="width: 400px; height: 300px; border-radius: 8px; object-fit: cover;">
+                 <img alt="Power Backup" src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=450&q=80" loading="lazy" class="lazyload img-lazy" fetchpriority="low" >
                  <p>Power Backup & Wi-Fi</p>
               </div>
                
               <div class="ami_sec">
-                 <img alt="Senior Citizens Zone" src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=450&q=80" loading="lazy" class="lazyload img-lazy" fetchpriority="low" style="width: 400px; height: 300px; border-radius: 8px; object-fit: cover;">
+                 <img alt="Senior Citizens Zone" src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=450&q=80" loading="lazy" class="lazyload img-lazy" fetchpriority="low" >
                  <p>Senior Citizens Zone</p>
               </div>
                           </div>
@@ -528,14 +414,6 @@
                <button class="btn btn-info micro-form-btn enqModal effetMoveGradient effectScale float-lg-right mx-sm-auto d-lg-none" data-form="lg" data-title="Download Gallery" data-btn="Send Now" data-enquiry="Download Gallery" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">Download Gallery</button>
             </div>
          </section>
-         <style>
-            iframe {width: 100%;height: 38vh;border: 2px solid #d7d7d7;}
-            @media only screen and (max-width: 1024px) {iframe {width: 100%;height: 32vh;border: 2px solid #d7d7d7;}} 
-            @media only screen and (max-width: 992px) {iframe {width: 100%;height: 18vh;border: 2px solid #d7d7d7;}} 
-            @media only screen and (max-width: 800px) {iframe {width: 100%;height: 26vh;border: 2px solid #d7d7d7;}} 
-            @media only screen and (max-width: 768px) {iframe {width: 100%;height: 20vh;border: 2px solid #d7d7d7;}}  
-            @media only screen and (max-width: 500px) {iframe {width: 100%;height: 50vh;border: 2px solid #d7d7d7;}}  
-         </style>
          <section id="" class="section shadow-sm">
             <span class="section-link" id="location"></span> 
             <span class="head text-capitalize">Address of Sapphire Villas</span> 
@@ -586,53 +464,29 @@
             <span class="d-block section-heading-sub text-capitalize">Project Site Address</span>
             <p> <p>
 	<strong>Sadarmangala, Whitefield, Bengaluru</strong></p></p>
-            <p style="
-    line-break: anywhere;
-">Project RERA:-                             PRM/KA/RERA/1251/446/PR/130924/007016                                                                                 </p>
-            <div class="" style="width: 100%;">
+            <p class="rera-text">Project RERA: PRM/KA/RERA/1251/446/PR/130924/007016 | RERA: PRM/KA/RERA/1251/310/AG/180430/000875</p>
+            <div class="" class="full-width">
           
 
-                                             <img class="img-lazy" src="https://via.placeholder.com/93x200/cccccc/666666?text=RERA+QR" alt="RERA QR Code" style="width: 93px;height:200px;text-align: center;margin:5px;">
+                                             <img class="img-lazy rera-qr" src="https://via.placeholder.com/93x200/cccccc/666666?text=RERA+QR" alt="RERA QR Code">
                                      </div>
         </section>
-         <section style="text-align:justify;background:#f7f7f7 !important;" class="section shadow-sm lazyload" id="developer">
+         <section class="section shadow-sm lazyload developer-section" id="developer">
             <small>
                                
-    <p class="mb-2" style=" font-size:11px;">
+    <p class="mb-2 disclaimer-text">
     <b>Disclaimer :</b> The content is for information purposes only and does not constitute an offer to avail of any service. Prices mentioned are subject to change without notice and properties mentioned are subject to availability. Images for representation purposes only. The logos and images used on this website are the exclusive property of 42 Estates and are protected under applicable copyright laws. We do not claim any ownership or rights to these materials, and they are used on this website solely for informational purposes.
     This is NOT an official website of 42 Estates but Official Site of its Authorized Sales Partner. We may share data with RERA registered brokers/companies for further processing. We may also send updates to the mobile number/email id registered with us. 
     </p> 
                <hr>
-               <p style="text-align:center;">
+               <p class="text-center">
                 
-<a href="privacy-policy" target="_blank"  style="font-size:11px;"><span><b>Privacy Policy</b></span></a> <span style="font-size:11px;"> | </span><a href="terms-and-conditions" target="_blank"  style="font-size:11px;"><span><b>Term & Condition</b></span></a></p>
+<a href="privacy-policy" target="_blank" class="disclaimer-text"><span><b>Privacy Policy</b></span></a> <span class="disclaimer-text"> | </span><a href="terms-and-conditions" target="_blank" class="disclaimer-text"><span><b>Term & Condition</b></span></a></p>
             </small>
          </section>
       </main>
 
       
-      <style>
-         .action-icon img{ height: 22px; width: auto; margin-right: 7px; }
-         .ft-main{ display:flex; justify-content:center; align-items:center; width:100%; padding:0% 2%; font-size:14px; }
-         .ft-left{ width:82%; }
-         .ft-right{ width:16%; }
-         .acceptcookies{ font-size: 16px; padding: 3px 30px; }
-         @media (min-width: 1920px) and (max-width: 2560px)  {
-         .ft-main{ font-size:19px; }
-         }
-         @media (min-width: 2561px) and (max-width: 5120px)  {
-         .ft-main{ font-size:36px; }
-         }
-         @media (min-width: 1920px) and (max-width: 5120px)  {
-         .acceptcookies{ font-size: 46px; padding: 3px 30px; }
-         }
-         @media (min-width: 320px) and (max-width: 767px)  {
-         .ft-main{ display:block; }
-         .ft-left{ width:100%; text-align:justify; }
-         .ft-right{ width:100%; }
-         .acceptcookies{ margin-top: 10px; margin-left:0px!important; }
-         }
-      </style>
       <!--exit modal 1 start -->
       <div class="modal fade lightbox" id="enqModal233" tabindex="-1" role="dialog" aria-hidden="true"></div>
       <!--Exit modal 1 end-->
@@ -640,9 +494,9 @@
       <div class="modal fade lightbox2 abc"></div>
 
       <ul class="mob-action nav nav-fill d-sm-block d-lg-none">
-        <li class="nav-item" aria-label="Call me" onclick="javascript:location.href='tel:8130730360'"> Call</li>
+        <li class="nav-item" aria-label="Call me" onclick="javascript:location.href='tel:8880804242'"> Call</li>
         <li class="nav-item enqModal">
-            <a href="https://api.whatsapp.com/send?phone=919911536360&text=Hi! Tell me more about the Project : Sapphire Villas by 42 Estates" target="_blank" style="color: #fff;">
+            <a href="https://api.whatsapp.com/send?phone=918880804242&text=Hi! Tell me more about the Project : Sapphire Villas by 42 Estates" target="_blank" class="text-white">
                  Whatsapp
             </a>
            
@@ -659,7 +513,7 @@
 
             <ul class="nav nav-fill og-block">
                 <li class="nav-item enqModal" data-form="lg" data-title="Pre Register" data-btn="Register Now " data-enquiry="Organize Site Visit" data-toggle="modal" data-target="#enqModal">Pre Register</li>
-                <li class="nav-item driftc"><a href="tel:8130730360" class="textcolor"><i class="fas fa-phone"></i>8130730360</a></li>
+                <li class="nav-item driftc"><a href="tel:8880804242" class="textcolor"><i class="fas fa-phone"></i>8880804242</a></li>
             </ul>
 
             <button class="btn btn-sm btn-info micro-form-btn-sm effetGradient effectScale enqModal mt-1" data-form="sm" data-title="Immediate Call Back" data-btn="Request Call Now" data-enquiry="Request Call Back" data-toggle="modal" data-target="#enqModal">
@@ -692,7 +546,7 @@
             <div class="mb-4 mt-4">
                 <div class="form-group form-check">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1" checked>
-                    <label class="form-check-label" style="font-size:12px;text-align: left;color:#000" for="exampleCheck1"><spna style="font-size: 10px;"> I authorize representatives of 360 Realtors LLP company to Call, SMS, Email or WhatsApp me about its products and offers. This consent overrides any registration for DNC/NDNC</span></label>
+                    <label class="form-check-label"  for="exampleCheck1"><spna > I authorize representatives of 360 Realtors LLP company to Call, SMS, Email or WhatsApp me about its products and offers. This consent overrides any registration for DNC/NDNC</span></label>
                 </div>
             </div>
             <div id="contactUs_submit_wait_fixpup">
@@ -721,7 +575,7 @@
 
                     <div class="flex-fill align-self-center">
                         <span class="popup-logo">
-                            <img alt="Sapphire Villas Logo" src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=60&q=80" class="logo img-lazy" style="max-width: 150px; margin-bottom: 15px;">
+                            <img alt="Sapphire Villas Logo" src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=60&q=80" class="logo img-lazy" class="logo">
                         </span>
                         <span class="modal-title-secondary"> Register here and Avail the <span class="text-danger">Best Offers!!</span></span>
                         <div class="form-side" id="pardotForm">
@@ -749,7 +603,7 @@
                             <div class="mb-4 mt-4">
                                 <div class="form-group form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1" checked>
-                                <label class="form-check-label" style="font-size:12px;text-align: left;color:#000" for="exampleCheck1"><spna style="font-size: 10px;"> I authorize representatives of 360 Realtors LLP company to Call, SMS, Email or WhatsApp me about its products and offers. This consent overrides any registration for DNC/NDNC</span></label>
+                                <label class="form-check-label"  for="exampleCheck1"><spna > I authorize representatives of 360 Realtors LLP company to Call, SMS, Email or WhatsApp me about its products and offers. This consent overrides any registration for DNC/NDNC</span></label>
                                 </div>
                             </div>
 
@@ -765,7 +619,7 @@
                   <!--Privacy Policy LINK-->
                   <small class="modal-call-btn">
                      <!--CONTACT NO-->
-                     <a href="tel:8130730360" aria-label="Contact No." class="modal-call-btn" style="display: inline-block;justify-content: center;width: fit-content;padding: 0.5rem 1rem; margin-bottom: 0.5rem; background-color: var(--colorPrimary);color: var(--colorBtn);text-decoration: none;border-radius: 4px;"><i class="fas fa-phone"></i>8130730360</a>
+                     <a href="tel:8880804242" aria-label="Contact No." class="modal-call-btn" ><i class="fas fa-phone"></i>8880804242</a>
                   </small>
                </div>
             </div>
@@ -773,143 +627,14 @@
       </div>
       
     <a href="https://api.whatsapp.com/send?phone=919911536360&text=Hi! Tell me more about the Project : Sapphire Villas by 42 Estates" target="_blank" class="whatsapp-btn">
-        <img src="https://cdn.jsdelivr.net/gh/twbs/icons@1.10.3/icons/whatsapp.svg" alt="WhatsApp" style="width: 48px; height: 48px; filter: invert(1);">
+        <img src="https://cdn.jsdelivr.net/gh/twbs/icons@1.10.3/icons/whatsapp.svg" alt="WhatsApp" class="whatsapp-icon">
     </a>
  
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-
-     
-    <script>
-        document.addEventListener("DOMContentLoaded", function (event) {
-        //document.getElementById("loader").remove();
-        document.querySelector("header").classList.remove("pload");
-        document.querySelector("main").classList.remove("pload");
-        
-        // Initialize Owl Carousel
-        if (typeof $.fn.owlCarousel !== 'undefined') {
-            $('.ami-3').owlCarousel({
-                loop: true,
-                margin: 10,
-                nav: true,
-                responsive: {
-                    0: { items: 1 },
-                    600: { items: 2 },
-                    1000: { items: 3 }
-                }
-            });
-        }
-        
-        // Initialize Fancybox for gallery
-        if (typeof $.fancybox !== 'undefined') {
-            $('[data-fancybox="gallery-0"]').fancybox({
-                buttons: [
-                    "zoom",
-                    "share",
-                    "slideShow",
-                    "fullScreen",
-                    "download",
-                    "thumbs",
-                    "close"
-                ],
-                loop: true,
-                protect: true,
-                animationEffect: "fade",
-                transitionEffect: "slide",
-                thumbs: {
-                    autoStart: true,
-                    hideOnClose: true
-                },
-                fullScreen: {
-                    autoStart: false
-                }
-            });
-        }
-        });
-        var sitePrimaryColor = "#2C2969";
-    </script>
-    <script>
-         var c, a = window.location.pathname,
-         d = a.substring(a.lastIndexOf("/") + 1);
-         if (d !== "thank-you.php") {
-         
-         function addEvent(obj, evt, fn) {
-         if (obj.addEventListener) {
-             obj.addEventListener(evt, fn, false);
-         } else if (obj.attachEvent) {
-             obj.attachEvent("on" + evt, fn);
-         }
-         }
-         
-    addEvent(document, 'mouseout', function(evt) {
-        let windowHeight = window.innerHeight;
-        if (evt.toElement == null && evt.relatedTarget == null && (evt.y < 0 || evt.y > windowHeight)) {
-            if(sessionStorage["PopupShown"] != 'yes' && $('#enqModal').css('display') == 'none'){ 
-                sessionStorage["PopupShown"] = 'yes';
-                $("#enqModal .modal-head").removeClass("d-none");
-                $("#enqModal .modal-call-btn").addClass("d-none");
-                $("#enqModal .modal-title").text("Virtual Site Visit"),
-                $("#enqModal .micro-form-btn").text("Submit"),
-                $("#enqModal #enquiredfor").val("Virtual Tour Exit intent popup"),
-                $('#enqModal').modal('show');
-            }
-        };
-    });
-         
-    sessionStorage.clear();
-    var available;
-    var percentage_of_page;
-    var half_screen;
-    var height;
-    $(window).scroll(function (e) {
-        available = $(document).height();
-        percentage_of_page = 0.5;
-        half_screen = available * percentage_of_page;
-        height = $(window).scrollTop();
-        // alert(height)
-        if( height > half_screen ){
-             if(sessionStorage["PopupShown1"] != 'yes1' && $('#enqModal').css('display') == 'none'){
-                  sessionStorage["PopupShown1"] = 'yes1';
-                  sessionStorage["PopupShown"] = 'yes';
-                  $("#enqModal .modal-head").removeClass("d-none");
-                 $("#enqModal .modal-call-btn").addClass("d-none");
-                 $("#enqModal .modal-title").text("Virtual Site Visit"),
-                 $("#enqModal .micro-form-btn").text("Start Tour"),
-                 $("#enqModal #enquiredfor").val("Virtual Tour Exit intent popup on scroll"),
-                 $('#enqModal').modal('show');
-            }
-        }else {
-             $('.lightbox').hide();
-        }
-    });
-    }
-
-        function readmorefn() {
-        document.getElementById("more").style.display = "none";
-        document.getElementById("less").style.display = "block";
-        document.getElementById("morebtn").style.display = "none";
-        document.getElementById("lessbtn").style.display = "block";
-    }
-
-    function readlessfn() {
-        document.getElementById("more").style.display = "block";
-        document.getElementById("less").style.display = "none";
-        document.getElementById("morebtn").style.display = "block";
-        document.getElementById("lessbtn").style.display = "none";
-    }
-    </script>
-      <script type="text/javascript">
-      document.addEventListener('DOMContentLoaded', (event) => {
-      $('img.img-lazy').each(function() {
-        if($(this).attr('data-src') !='' && $(this).attr('data-src') !=' ' && $(this).attr('data-src') !=null){
-           var newsrc = $(this).attr('data-src');
-           $(this).attr('src', newsrc);
-        }
-      })
-    });
-    </script>
+    <script src="custom.js"></script>
       
    </body>
 </html>

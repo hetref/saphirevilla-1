@@ -1,4 +1,4 @@
-/*@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);*/
+﻿/*@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);*/
 :root, html {
     font-family: Roboto, sans-serif;
     -webkit-text-size-adjust: 100%;
@@ -6,27 +6,27 @@
 }
 
 h1, h2, h5, p, ul {
-    margin-top: 0
+    margin-top: 0;
 }
 
 button, hr, input {
-    overflow: visible
+    overflow: visible;
 }
 
 .table, body {
-    color: #212529
+    color: #212529;
 }
 
 .btn, .navbar-toggler-icon, img {
-    vertical-align: middle
+    vertical-align: middle;
 }
 
 .carousel-inner, .modal {
-    overflow: hidden
+    overflow: hidden;
 }
 
 .owl-carousel, html {
-    -webkit-tap-highlight-color: transparent
+    -webkit-tap-highlight-color: transparent;
 }
 
 html {
@@ -150,7 +150,8 @@ select {
 }
 
 [type=button], [type=submit], button {
-    -webkit-appearance: button
+    -webkit-appearance: button;
+    appearance: button
 }
 
 [type=button]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner {
@@ -739,7 +740,8 @@ button.close {
     -webkit-transition: .5s ease-in-out;
     -moz-transition: .5s ease-in-out;
     -o-transition: .5s ease-in-out;
-    -ms-transition: .5s ease-in-out
+    -ms-transition: .5s ease-in-out;
+    transition: .5s ease-in-out
 }
 
 .bg-white {
@@ -1255,7 +1257,6 @@ img.lazyload:not([src]) {
 
 .mi {
     font-family: micon !important;
-    speak: none;
     font-style: normal;
     font-weight: 400;
     font-variant: normal;
@@ -2759,6 +2760,7 @@ img {
     position: relative;
     overflow: hidden;
     -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
 
 .owl-carousel .owl-stage {
@@ -2766,12 +2768,14 @@ img {
     -ms-touch-action: pan-Y;
     touch-action: manipulation;
     -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .owl-carousel .owl-item {
     min-height: 1px;
     float: left;
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     -webkit-touch-callout: none;
 }
 
@@ -2779,9 +2783,11 @@ img {
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
 
 #ami-3 .item-wrp {
@@ -2977,7 +2983,6 @@ img {
 
 .mi {
     font-family: micon !important;
-    speak: none;
     font-style: normal;
     font-weight: 400;
     font-variant: normal;
@@ -3430,14 +3435,14 @@ img {
     display: block
 }
 
-@keyframes .zoom-in-zoom-out {
+@keyframes zoom-in-zoom-out {
     0%,
     100% {
-        transform: scale(1,1)
+        transform: scale(1,1);
     }
 
     50% {
-        transform: scale(1.1,1.3)
+        transform: scale(1.1,1.3);
     }
 }
 
@@ -3496,4 +3501,424 @@ img {
     .whatsapp-btn{
         display: none;
     }
+}
+/* Custom CSS for Sapphire Villas */
+
+/* CSS Variables */
+:root {
+    --colorPrimary: #be8315;
+    --colorSecondary: #025c8e; 
+    --colorBtn: #ffffff;
+}
+
+/* Font Faces */
+@font-face { 
+    font-family: 'Roboto'; 
+    src: url('fonts/Roboto-Regular.woff2') format('woff2'); 
+    font-weight: normal; 
+}
+
+@font-face {
+    font-family: 'Roboto'; 
+    src: url('fonts/Roboto-Bold.woff2') format('woff2'); 
+    font-weight: bold; 
+}
+
+/* Loader Styles */
+#loader {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+}
+
+.loader-text {
+    display: block;
+    text-align: center;
+    color: #d7d7d7;
+    font-family: Roboto, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+@keyframes loader {
+    0% {filter: grayscale(0);}
+    50% {filter: grayscale(100%);}
+    100% {filter: grayscale(0);}
+}
+
+/* General Styles */
+.pload {
+    display: none;
+}
+
+.iti__flag-container {
+    display: none;
+}
+
+section#mymap {
+    height: 540px;
+}
+
+button.btn.btn-sm.btn-outline-info.sectio-bro-btn.overflow-hidden.enqModal {
+    margin-bottom: 15px;
+}
+
+input#submitBtn {
+    margin: 15px 0;
+}
+
+.textcolor {
+    color: #fff;
+}
+
+button.btn.btn-info.micro-form-btn.effetMoveGradient.submitBtn.enqModal {
+    margin-bottom: 15px;
+}
+
+a.drift-open-chat {
+    color: #fff;
+}
+
+p {
+    text-align: justify;
+}
+
+/* Thank you page */
+.thankyou-text p {
+    text-align: center !important;
+}
+
+/* Additional styles for responsive design */
+.card-d-custom { 
+    width: 95%; 
+    justify-content: center; 
+    text-align: center; 
+    margin: 0 auto 15px; 
+}
+
+/* Iframe Responsive Styles */
+iframe {
+    width: 100%;
+    height: 38vh;
+    border: 2px solid #d7d7d7;
+}
+
+@media only screen and (max-width: 1024px) {
+    iframe {
+        width: 100%;
+        height: 32vh;
+        border: 2px solid #d7d7d7;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    iframe {
+        width: 100%;
+        height: 18vh;
+        border: 2px solid #d7d7d7;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    iframe {
+        width: 100%;
+        height: 26vh;
+        border: 2px solid #d7d7d7;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    iframe {
+        width: 100%;
+        height: 20vh;
+        border: 2px solid #d7d7d7;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    iframe {
+        width: 100%;
+        height: 50vh;
+        border: 2px solid #d7d7d7;
+    }
+}
+
+/* Action Icon Styles */
+.action-icon img { 
+    height: 22px; 
+    width: auto; 
+    margin-right: 7px; 
+}
+
+/* Footer Main Styles */
+.ft-main { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    padding: 0% 2%; 
+    font-size: 14px; 
+}
+
+.ft-left { 
+    width: 82%; 
+}
+
+.ft-right { 
+    width: 16%; 
+}
+
+.acceptcookies { 
+    font-size: 16px; 
+    padding: 3px 30px; 
+}
+
+@media (min-width: 1920px) and (max-width: 2560px) {
+    .ft-main { 
+        font-size: 19px; 
+    }
+}
+
+@media (min-width: 2561px) and (max-width: 5120px) {
+    .ft-main { 
+        font-size: 36px; 
+    }
+}
+
+@media (min-width: 1920px) and (max-width: 5120px) {
+    .acceptcookies { 
+        font-size: 46px; 
+        padding: 3px 30px; 
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .ft-main { 
+        display: block; 
+    }
+    .ft-left { 
+        width: 100%; 
+        text-align: justify; 
+    }
+    .ft-right { 
+        width: 100%; 
+    }
+    .acceptcookies { 
+        margin-top: 10px; 
+        margin-left: 0px !important; 
+    }
+}
+
+/* Navigation icon styles */
+.nav-icon {
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.loc-icon {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.action-icon {
+    margin-right: 5px;
+}
+
+/* Custom icon colors */
+.color-primary {
+    color: var(--colorPrimary) !important;
+}
+
+/* Gallery styles */
+.gallery-thumb {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-thumb:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* Fancybox customization */
+.fancybox-toolbar {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+}
+
+.fancybox-caption {
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+    color: #fff;
+    font-size: 16px;
+    padding: 20px;
+}
+
+/* WhatsApp floating button */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #25D366;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+    text-decoration: none;
+}
+
+.whatsapp-btn img {
+    width: 32px;
+    height: 32px;
+    filter: brightness(0) invert(1);
+}
+
+@media (max-width: 768px) {
+    .whatsapp-btn {
+        bottom: 15px;
+        right: 15px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .whatsapp-btn img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+/* Additional inline styles converted to classes */
+.pro-details-wrapper {
+    flex-wrap: wrap; 
+    display: inline-flex;
+    padding-bottom: 10px;
+}
+
+.pro-price-subtitle {
+    font-size: 14px; 
+    width: 100%; 
+    background: transparent; 
+    font-weight: bold; 
+    text-align: center; 
+    color: #fff;
+}
+
+.pro-price small {
+    font-size: 16px;
+}
+
+.read-more-btn, .read-less-btn {
+    color: #000;
+}
+
+.show-read-more {
+    display: none;
+}
+
+.blurred-image {
+    filter: blur(3px);
+}
+
+/* Inline amenity image styles */
+.ami_sec img {
+    width: 400px; 
+    height: 300px; 
+    border-radius: 8px; 
+    object-fit: cover;
+}
+
+/* Developer section styles */
+.developer-section {
+    text-align: justify;
+    background: #f7f7f7 !important;
+}
+
+.rera-qr {
+    width: 93px;
+    height: 200px;
+    text-align: center;
+    margin: 5px;
+}
+
+.disclaimer-text {
+    font-size: 11px;
+}
+
+.rera-text {
+    line-break: anywhere;
+}
+
+/* WhatsApp icon styles */
+.whatsapp-icon {
+    width: 48px; 
+    height: 48px; 
+    filter: invert(1);
+}
+
+/* Form label styles */
+.form-check-label {
+    font-size: 12px;
+    text-align: left;
+    color: #000;
+}
+
+.form-check-label span {
+    font-size: 10px;
+}
+
+/* Modal logo styles */
+.popup-logo .logo {
+    max-width: 150px;
+    margin-bottom: 15px;
+}
+
+/* Modal call button styles */
+.modal-call-btn {
+    display: inline-block;
+    justify-content: center;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    background-color: var(--colorPrimary);
+    color: var(--colorBtn);
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* Full width container */
+.full-width {
+    width: 100%;
+}
+
+/* Center aligned text */
+.text-center {
+    text-align: center;
+}
+
+/* White text color */
+.text-white {
+    color: #fff;
 }
