@@ -1459,27 +1459,6 @@ img.lazyload:not([src]) {
     animation-name: slideInDown
 }
 
-#ami-3 .item-wrp {
-    display: flex;
-    flex-direction: column;
-}
-
-#ami-3 .item-wrp>div {
-    display: flex;
-    align-items: center;
-}
-
-#ami-3 .item-wrp>div:last-child {
-    border-bottom: none
-}
-
-#ami-3 .item-wrp p {
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: .1vw;
-    border-left: 4px solid var(--colorPrimary);
-    padding-left: 0.5vw;
-}
 
 .gallery-thumb {
     width: 100%;
@@ -2077,17 +2056,9 @@ img.lazyload:not([src]) {
         text-align: center
     }
 
-    .master-plan {
-        display: block;
-        max-width: 25vw;
-        height: 38vh;
-        margin: 0 auto
-    }
+    
 
-    .master-plan img {
-        max-width: 100%;
-        height: 100%
-    }
+    
 
     .floor-plan-img {
         width: 100%;
@@ -2389,18 +2360,13 @@ img.lazyload:not([src]) {
         height: 70px
     }
 
-    .master-plan, .vsv-img {
-        height: auto;
-        width: 100%
-    }
+    
 
     .section .head {
         font-size: 18px
     }
 
-    #ami-3 .item-wrp p, .price-amt .mi {
-        font-size: 14px
-    }
+    
 
     .section-heading {
         font-size: 25px;
@@ -2428,14 +2394,7 @@ img.lazyload:not([src]) {
         text-align: center
     }
 
-    .master-plan {
-        display: block
-    }
-
-    .master-plan img {
-        max-width: 100%;
-        max-height: 200px
-    }
+    
 
     .floor-plan-img {
         width: 100%;
@@ -2613,20 +2572,7 @@ img.lazyload:not([src]) {
     }
 }
 
-@media only screen and (min-width: 991px) {
-    #ami-3 .item-wrp img {
-        width: 5vw;
-        height: 4vw;
-    }
 
-    #ami-3 .item-wrp p {
-        font-size: 1.05vw
-    }
-
-    #ami-3 .item-wrp>div {
-        padding: 1vw 0
-    }
-}
 
 @media only screen and (min-width: 575px) {
     .gallery-thumb {
@@ -2902,9 +2848,7 @@ img.lazyload:not([src]) {
 }
 
 
-   .dview{
-        display:block;
-    }
+   
     .mview{
         display: none;
     }
@@ -3013,14 +2957,7 @@ img {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-#ami-3.owl-carousel.owl-loaded {
-    width: 100%;
-    height: 100%;
-    background-color: #fafafa;
-    color: #000;
-    background-size: cover;
-    border-radius: 2vw;
-}
+
 
 .no-js .owl-carousel, .owl-carousel.owl-loaded {
     display: block;
@@ -3069,15 +3006,7 @@ img {
     transform: translate3d(0, 0, 0);
 }
 
-#ami-3 .item-wrp {
-    display: flex;
-    flex-direction: column;
-}
 
-#ami-3 .item-wrp>div {
-    display: flex;
-    align-items: center;
-}
 
 .ami_sec {
     position: relative;
@@ -3099,13 +3028,7 @@ img {
     user-select: none;
 }
 
-#ami-3 .item-wrp p {
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 0.1vw;
-    border-left: 4px solid var(--colorPrimary);
-    padding-left: 0.5vw;
-}
+
 
 .ami_sec p {
     position: absolute;
@@ -3114,34 +3037,12 @@ img {
     background-image: linear-gradient(45deg, black, transparent);
 }
 
-@media only screen and (min-width: 1281px) {
-    #ami-3 .item-wrp>div {
-        padding: 0.6vw 0;
-    }
 
-    #ami-3 .item-wrp img {
-        width: 100%;
-        height: 100%;
-        border-radius: 1vw;
-    }
-}
 
-@media only screen and (min-width: 991px) {
-    #ami-3 .item-wrp>div {
-        padding: 0.4vw 0;
-    }
-}
+
 
 @media (min-width: 1600px) and (max-width: 5120px) {
-    #ami-3 .item-wrp img {
-        width: 100%;
-        height: 100%;
-        border-radius: 1vw;
-    }
-
-    #ami-3 .item-wrp>div {
-        padding: 0.6vw 0;
-    }
+  
 
     .gallery-thumb {
         height: auto;
@@ -3387,9 +3288,7 @@ img {
         display: block;
     }
 
-    #ami-3 .disabled {
-        display: none;
-    }
+ 
 }
 
 @media only screen and (max-width: 768px) {
@@ -3473,35 +3372,19 @@ img {
 }
 
 @media only screen and (max-width: 424px) and (min-width: 320px) {
-       .dview{
-        display:none;
-    }
+       
     .mview{
         display: block;
     }
-    #ami-3 .item-wrp img {
-        padding: 10px 0;
-        height: 57vw;
-        width: 100%;
-        object-fit: fill;
-        border-radius: 1vw;
-    }
+ 
 }
 
 @media only screen and (max-width: 768px) and (min-width: 425px) {
-       .dview{
-        display:none;
-    }
+       
     .mview{
         display: block;
     }
-    #ami-3 .item-wrp img {
-        padding: 10px 0;
-        height: 57vw;
-        width: 100%;
-        object-fit: fill;
-        border-radius: 1vw;
-    }
+   
 }
 
 @media (min-width: 576px) {
@@ -3528,33 +3411,14 @@ img {
     }
 }
 
-@media only screen and (max-width: 1280px) and (min-width: 992px) {
-    #ami-3 .item-wrp img {
-        width: 100%;
-        height: 100%;
-        border-radius: 1vw;
-    }
-}
 
-@media only screen and (max-width: 991px) and (min-width: 769px) {
-    #ami-3 .item-wrp img {
-        width: 100%;
-        height: 100%;
-        border-radius: 1vw;
-    }
-}
 
 @media (min-width: 992px) {
     .d-lg-none {
         display: none !important;
     }
 
-    .master-plan {
-        display: block;
-        max-width: 100%;
-        height: 18.5vw;
-        margin: 0 auto;
-    }
+    
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -3564,9 +3428,7 @@ img {
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-       .dview{
-        display:none;
-    }
+       
     .mview{
         display: block;
     }
@@ -3687,9 +3549,7 @@ img {
 
 @media only screen and (max-width: 767px) {
 
-    .dview{
-        display:none;
-    }
+   
     .mview{
         display: block;
     }
@@ -3783,9 +3643,7 @@ img {
 }
 
 @media(max-width:767px){
-       .dview{
-        display:none;
-    }
+       
     .mview{
         display: block;
     }
@@ -7595,12 +7453,7 @@ p.section-description {
     /* Bottom Contact Buttons - Horizontal Layout */
    
     
-    /* Hide the quotation form */
-    .form-heading,
-    .form-side,
-    #pardotForm {
-        
-    }
+    
     
     .og-section {
         width: 100%;
@@ -7969,4 +7822,182 @@ p.section-description {
         font-size: 1.5rem;
         z-index: 1001;
     }
+}
+
+/* ==========================================
+   ACCESSIBILITY ENHANCEMENTS
+   ========================================== */
+
+/* Enhanced focus states for all interactive elements */
+a:focus {
+    outline: 3px solid var(--light-blue) !important;
+    outline-offset: 2px;
+    background-color: rgba(0, 160, 198, 0.1);
+}
+
+button:focus,
+.btn:focus {
+    outline: 3px solid var(--light-blue) !important;
+    outline-offset: 2px;
+    background-color: rgba(0, 160, 198, 0.1);
+}
+
+/* Specific focus states for navigation elements */
+.navbar-brand:focus,
+.nav-link:focus {
+    outline: 3px solid var(--light-blue) !important;
+    outline-offset: 2px;
+    background-color: rgba(0, 160, 198, 0.15);
+    border-radius: 4px;
+}
+
+/* Focus states for modal triggers and enquiry links */
+.enqModal:focus {
+    outline: 3px solid var(--light-blue) !important;
+    outline-offset: 2px;
+    background-color: rgba(0, 160, 198, 0.1);
+    border-radius: 4px;
+}
+
+/* Focus states for contact links */
+a[href^="tel:"]:focus,
+a[href^="mailto:"]:focus,
+a[href^="https://api.whatsapp.com"]:focus {
+    outline: 3px solid var(--light-blue) !important;
+    outline-offset: 2px;
+    background-color: rgba(0, 160, 198, 0.1);
+    border-radius: 4px;
+}
+
+/* Focus states for action buttons */
+.whatsapp-btn:focus,
+.modal-call-btn:focus {
+    outline: 3px solid var(--light-blue) !important;
+    outline-offset: 3px;
+    background-color: rgba(0, 160, 198, 0.2);
+}
+
+/* Screen reader only text utility class */
+.sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+/* Skip link for keyboard navigation */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: var(--dark-blue);
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 9999;
+    border-radius: 4px;
+}
+
+.skip-link:focus {
+    top: 6px;
+    outline: 3px solid var(--light-blue);
+    outline-offset: 2px;
+}
+
+/* Enhanced hover states for better visual feedback */
+.navbar-brand:hover,
+.nav-link:hover {
+    background-color: rgba(0, 160, 198, 0.1);
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.enqModal:hover {
+    background-color: rgba(0, 160, 198, 0.05);
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* Ensure proper contrast for links in footer */
+.disclaimer-text a {
+    color: var(--light-blue) !important;
+    text-decoration: underline;
+}
+
+.disclaimer-text a:hover,
+.disclaimer-text a:focus {
+    color: #fff !important;
+    background-color: var(--light-blue);
+    padding: 2px 4px;
+    border-radius: 2px;
+}
+
+/* Improved focus visibility for form elements */
+.form-control:focus {
+    border-color: var(--light-blue) !important;
+    box-shadow: 0 0 0 0.2rem rgba(0, 160, 198, 0.25) !important;
+    outline: none;
+}
+
+/* Focus states for read more/less buttons */
+.read-more-btn:focus,
+.read-less-btn:focus {
+    outline: 3px solid var(--light-blue) !important;
+    outline-offset: 2px;
+    background-color: rgba(0, 160, 198, 0.1);
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    a:focus,
+    button:focus,
+    .btn:focus {
+        outline: 4px solid #000000 !important;
+        background-color: #ffff00 !important;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Ensure minimum touch target size for mobile */
+@media (max-width: 768px) {
+    a, button, .btn {
+        min-height: 44px;
+        min-width: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .nav-link {
+        padding: 12px 8px !important;
+    }
+    
+    .mob-action .nav-item a {
+        min-height: 44px;
+        padding: 12px 8px;
+    }
+}
+
+/* Essential accessibility focus states */
+a:focus, .nav-link:focus {
+    outline: 2px solid var(--light-blue) !important;
+    outline-offset: 2px;
+}
+
+button:focus, .btn:focus {
+    outline: 2px solid var(--light-blue) !important;
+    outline-offset: 2px;
 }

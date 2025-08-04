@@ -49,15 +49,15 @@
 
    <body data-spy="scroll" data-target="#navbarNav">
 
-      <header class="micro-nav fixed-top pload">
+      <header class="micro-nav fixed-top pload" role="banner">
          <nav class="navbar navbar-expand-lg navbar-light bg-white micro-navbar">
-            <a class="navbar-brand" href="/">
+            <a class="navbar-brand" href="/" aria-label="Sapphire Villas homepage">
                 <img alt="Sapphire Villas Logo" src="assets/sai-purvi-logo.webp" data-src="assets/sai-purvi-logo.webp" class="logo img-lazy" width="180" height="60" style="object-fit: contain; max-height: 60px;">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarNav">
                <ul class="navbar-nav nav-fill">
-                  <li class="nav-item"><a class="nav-link" href="#home"><i class="fas fa-home nav-icon"></i><span class="d-sm-inline d-md-none"> Home</span></a></li>
+                  <li class="nav-item"><a class="nav-link" href="#home" aria-label="Home"><i class="fas fa-home nav-icon"></i><span class="d-sm-inline d-md-none"> Home</span></a></li>
                   <li class="nav-item"><a class="nav-link" href="#pricing"><i class="fas fa-tags nav-icon"></i> Price</a></li>
                   <li class="nav-item"><a class="nav-link" href="#interiors"><i class="fas fa-couch nav-icon"></i> Interiors</a></li>
                   <li class="nav-item"><a class="nav-link" href="#wellness"><i class="fas fa-leaf nav-icon"></i> Wellness</a></li>
@@ -66,7 +66,7 @@
                   <li class="nav-item"><a class="nav-link" href="#developer"><i class="fas fa-building nav-icon"></i> Developer</a></li>
                   <li class="nav-item overflow-hidden"><a class="nav-link enqModal" href="#" data-form="md" data-title="Download brochure" data-btn="Download now" data-enquiry="Download Brochure Toolbar" data-redirect="brochure" data-redirect-file="brochure.pdf" data-toggle="modal" data-target="#enqModal"> <i class="fas fa-download nav-icon d-inline-block animated slideInDown infinite"></i> Download Brochure </a> </li>
                   <li class="cp-logo">
-                      <a href="/">
+                      <a href="/" aria-label="Go to 42 Estates homepage">
                         <img alt="42 Estates Logo" src="assets/42-estate-logo.webp" data-src="assets/42-estate-logo.webp" class="logo img-lazy" width="120" height="60" style="object-fit: contain; max-height: 60px;">
                     </a>
                   </li>
@@ -76,7 +76,7 @@
       </header>
 
 
-      <main class="pload">
+      <main class="pload" id="main-content">
 
          <div id="home" class="hero-banner">
             <div class="position-relative">
@@ -133,8 +133,8 @@
 <p>
 	Discover a life of refined luxury at Sapphire Villas, an exclusive residential enclave nestled in the tranquil neighborhood of Sadarmangala, Whitefield, Bangalore. Designed for those who seek the perfect blend of sophistication and comfort, this limited collection of bespoke 4BHK villas offers a refined escape from the city's chaos while keeping you seamlessly connected to urban conveniences.</p>
             </p>
-            <a href="JavaScript:Void(0);" class="btn btn-link btn-sm read-more-btn" id="morebtn" onclick="readmorefn();">
-               Read More 
+            <a href="JavaScript:Void(0);" class="btn btn-link btn-sm read-more-btn" id="morebtn" onclick="readmorefn();" aria-label="Read more about Sapphire Villas">
+               Read More
             </a>
             </div>
             <div class="clearfix"></div>
@@ -145,7 +145,7 @@
 <p>
 	Sapphire Villas stands out as a limited-edition community offering tasteful living with BBMP Approved & RERA Registered status (PRM/KA/RERA/1251/446/PR/130924/007016). The project features exclusive 4BHK Villas ranging from 3,500–5,000 sq.ft. with expansive living areas, high-end finishes, natural light with large windows, private gardens, terraces, and balconies.</p>
 <p>
-	Each villa is curated for privacy, luxury, and convenience. Modern interiors feature marble flooring for living rooms, wooden floors in master bedrooms, and energy-efficient features like solar water provision. The community offers 40+ world-class amenities including clubhouse, swimming pool, gym, jogging track, tennis courts, and 24x7 security. Located in Sadarmangala, Whitefield, the project is just 5 minutes from top-rated schools, malls, hospitals, and IT Parks with quick access to upcoming Metro and business hubs. <strong>Sapphire Villas by 42 Estates</strong> offers a peaceful environment, yet well-connected to Bengaluru's vibrant core.</p>            <a href="JavaScript:Void(0);" class="btn btn-link btn-sm read-less-btn" id="lessbtn" onclick="readlessfn();">Read Less </a> 
+	Each villa is curated for privacy, luxury, and convenience. Modern interiors feature marble flooring for living rooms, wooden floors in master bedrooms, and energy-efficient features like solar water provision. The community offers 40+ world-class amenities including clubhouse, swimming pool, gym, jogging track, tennis courts, and 24x7 security. Located in Sadarmangala, Whitefield, the project is just 5 minutes from top-rated schools, malls, hospitals, and IT Parks with quick access to upcoming Metro and business hubs. <strong>Sapphire Villas by 42 Estates</strong> offers a peaceful environment, yet well-connected to Bengaluru's vibrant core.</p>            <a href="JavaScript:Void(0);" class="btn btn-link btn-sm read-less-btn" id="lessbtn" onclick="readlessfn();" aria-label="Read less about Sapphire Villas">Read Less </a> 
             </div>
             <button class="btn btn-info micro-form-btn effetMoveGradient enqModal" data-form="md" data-title="Download Brochure" data-btn="Download Now" data-enquiry="Download Brochure Welcome Text" data-redirect="brochure" data-redirect-file="brochure.pdf" data-toggle="modal" data-target="#enqModal">
             <span class="d-inline-block fas fa-download mr-1 animated slideInDown infinite"></span> Download Brochure
@@ -186,7 +186,7 @@
                      </div>
                </div>
                <div class="col-md-4">
-                  <a href="#" class="text-decoration-none enqModal" data-form="lg" data-title="Get Complete Pricing Details" data-btn="Send Now" data-enquiry="Complete Pricing Information" data-toggle="modal" data-target="#enqModal">
+                  <a href="#" class="text-decoration-none enqModal" data-form="lg" data-title="Get Complete Pricing Details" data-btn="Send Now" data-enquiry="Complete Pricing Information" data-toggle="modal" data-target="#enqModal" aria-label="Get Complete Pricing Details for Sapphire Villas">
                      <div class="simple-pricing-card">
                         <div class="simple-card-img">
                            <img alt="Complete Pricing & Payment Plans" src="assets/sv-img4.webp" data-src="assets/sv-img4.webp" class="img-lazy w-100" width="400" height="250" style="object-fit: cover; aspect-ratio: 8/5;">
@@ -317,7 +317,7 @@
                
                <div class="row wellness-features">
                   <div class="col-md-6 col-lg-3 mb-4">
-                     <a href="#" class="text-decoration-none enqModal" data-form="lg" data-title="Wellness Amenities Details" data-btn="Send Now" data-enquiry="Yoga & Meditation Zone Details" data-redirect="enquiry" data-toggle="modal" data-target="#enqModal">
+                     <a href="#" class="text-decoration-none enqModal" data-form="lg" data-title="Wellness Amenities Details" data-btn="Send Now" data-enquiry="Yoga & Meditation Zone Details" data-redirect="enquiry" data-toggle="modal" data-target="#enqModal" aria-label="Get details about Yoga and Meditation Zone amenities">
                         <div class="wellness-card shadow-sm border border-light">
                            <div class="wellness-img-wrapper">
                               <img alt="Yoga & Meditation Center" src="assets/wellness-1.webp" class="img-lazy wellness-card-img w-100" width="400" height="250" style="object-fit: cover; aspect-ratio: 8/5;">
@@ -343,7 +343,7 @@
                   </div>
                   
                   <div class="col-md-6 col-lg-3 mb-4">
-                     <a href="#" class="text-decoration-none enqModal" data-form="lg" data-title="Wellness Amenities Details" data-btn="Send Now" data-enquiry="Wellness Center Details" data-redirect="enquiry" data-toggle="modal" data-target="#enqModal">
+                     <a href="#" class="text-decoration-none enqModal" data-form="lg" data-title="Wellness Amenities Details" data-btn="Send Now" data-enquiry="Wellness Center Details" data-redirect="enquiry" data-toggle="modal" data-target="#enqModal" aria-label="Get details about Wellness Center amenities">
                         <div class="wellness-card shadow-sm border border-light">
                            <div class="wellness-img-wrapper">
                               <img alt="Professional Wellness Center" src="assets/wellness-2.webp" class="img-lazy wellness-card-img w-100" width="400" height="250" style="object-fit: cover; aspect-ratio: 8/5;">
@@ -369,7 +369,7 @@
                   </div>
                   
                   <div class="col-md-6 col-lg-3 mb-4">
-                     <a href="#" class="text-decoration-none enqModal" data-form="lg" data-title="Wellness Amenities Details" data-btn="Send Now" data-enquiry="Organic Gardens Details" data-redirect="enquiry" data-toggle="modal" data-target="#enqModal">
+                     <a href="#" class="text-decoration-none enqModal" data-form="lg" data-title="Wellness Amenities Details" data-btn="Send Now" data-enquiry="Organic Gardens Details" data-redirect="enquiry" data-toggle="modal" data-target="#enqModal" aria-label="Get details about Organic Gardens amenities">
                         <div class="wellness-card shadow-sm border border-light">
                            <div class="wellness-img-wrapper">
                               <img alt="Organic Herb & Vegetable Gardens" src="assets/wellness-3.webp" class="img-lazy wellness-card-img w-100" width="400" height="250" style="object-fit: cover; aspect-ratio: 8/5;">
@@ -395,7 +395,7 @@
                   </div>
                   
                   <div class="col-md-6 col-lg-3 mb-4">
-                     <a href="#" class="text-decoration-none enqModal" data-form="lg" data-title="Wellness Amenities Details" data-btn="Send Now" data-enquiry="Nature Fitness Trail Details" data-redirect="enquiry" data-toggle="modal" data-target="#enqModal">
+                     <a href="#" class="text-decoration-none enqModal" data-form="lg" data-title="Wellness Amenities Details" data-btn="Send Now" data-enquiry="Nature Fitness Trail Details" data-redirect="enquiry" data-toggle="modal" data-target="#enqModal" aria-label="Get details about Nature Fitness Trail amenities">
                         <div class="wellness-card shadow-sm border border-light">
                            <div class="wellness-img-wrapper">
                               <img alt="Nature Fitness Trail & Outdoor Gym" src="assets/wellness-4.webp" class="img-lazy wellness-card-img w-100" width="400" height="250" style="object-fit: cover; aspect-ratio: 8/5;">
@@ -802,7 +802,7 @@
                            <div class="contact-info-card">
                               <h5><i class="fas fa-building text-info mr-2"></i>Project Developer</h5>
                               <p class="mb-1"><strong>42 Estates</strong></p>
-                              <p class="mb-1">Website: <a href="https://www.42estates.com" target="_blank" class="text-primary">www.42estates.com</a></p>
+                              <p class="mb-1">Website: <a href="https://www.42estates.com" target="_blank" class="text-primary" aria-label="Visit 42 Estates website (opens in new tab)">www.42estates.com</a></p>
                               <p class="mb-0">RERA: PRM/KA/RERA/1251/446/PR/130924/007016</p>
                            </div>
                         </div>
@@ -811,8 +811,8 @@
                               <h5><i class="fas fa-handshake text-success mr-2"></i>Sales Office</h5>
                               <p class="mb-1"><strong>360 Realtors LLP</strong></p>
                               <p class="mb-1">Address: Whitefield Main Road, Bengaluru - 560066</p>
-                              <p class="mb-1">Phone: <a href="tel:8880804242" class="text-primary">8880804242</a></p>
-                              <p class="mb-0">Email: <a href="mailto:info@sapphirevillas.com" class="text-primary">info@sapphirevillas.com</a></p>
+                              <p class="mb-1">Phone: <a href="tel:8880804242" class="text-primary" aria-label="Call 42 Estates at 8880804242">8880804242</a></p>
+                              <p class="mb-0">Email: <a href="mailto:info@sapphirevillas.com" class="text-primary" aria-label="Send email to Sapphire Villas">info@sapphirevillas.com</a></p>
                            </div>
                         </div>
                      </div>
@@ -879,7 +879,7 @@
                <hr>
                <p class="text-center">
                 
-<a href="privacy-policy" target="_blank" class="disclaimer-text"><span><b>Privacy Policy</b></span></a> <span class="disclaimer-text"> | </span><a href="terms-and-conditions" target="_blank" class="disclaimer-text"><span><b>Term & Condition</b></span></a></p>
+<a href="privacy-policy" target="_blank" class="disclaimer-text" aria-label="Read Privacy Policy (opens in new tab)"><span><b>Privacy Policy</b></span></a> <span class="disclaimer-text"> | </span><a href="terms-and-conditions" target="_blank" class="disclaimer-text" aria-label="Read Terms and Conditions (opens in new tab)"><span><b>Term & Condition</b></span></a></p>
             </small>
          </section>
       </main>
@@ -898,7 +898,7 @@
             </span>
         </li>
         <li class="nav-item enqModal btn btn-success micro-form-btn enqModal effetMoveGradient effectScale">
-            <a href="https://api.whatsapp.com/send?phone=918880804242&text=Hi! Tell me more about the Project : Sapphire Villas by 42 Estates" target="_blank" class="text-white text-decoration-none">
+            <a href="https://api.whatsapp.com/send?phone=918880804242&text=Hi! Tell me more about the Project : Sapphire Villas by 42 Estates" target="_blank" class="text-white text-decoration-none" aria-label="Contact us on WhatsApp about Sapphire Villas project">
                 <span class="action-icon d-inline-block">
                     <i class="fab fa-whatsapp"></i>
                 </span>
@@ -919,7 +919,7 @@
             <ul class="nav nav-fill og-block">
                 <li class="nav-item enqModal" data-form="lg" data-title="Pre Register" data-btn="Register Now " data-enquiry="Organize Site Visit" data-toggle="modal" data-target="#enqModal">Pre Register</li>
                <li class="nav-item driftc">
-                  <a href="tel:8880804242" class="textcolor no-hover-color">
+                  <a href="tel:8880804242" class="textcolor no-hover-color" aria-label="Call us at 8880804242">
                      <i class="fas fa-phone"></i>8880804242
                   </a>
                </li>
