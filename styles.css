@@ -246,7 +246,7 @@ a:hover {
 /* Testimonial Cards */
 .testimonial-card {
     background-color: var(--white);
-    border: 1px solid rgba(39, 39, 109, 0.1);
+    
 }
 
 /* Why Choose Cards */
@@ -259,7 +259,7 @@ a:hover {
 .rera-card,
 .contact-info-card {
     background-color: var(--white);
-    border: 1px solid rgba(39, 39, 109, 0.1);
+    
 }
 
 /* Gallery Thumbnails */
@@ -407,9 +407,7 @@ button, select {
     text-transform: none
 }
 
-.btn:not(:disabled):not(.disabled), [role=button], [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
-    cursor: pointer
-}
+
 
 select {
     word-wrap: normal;
@@ -1227,7 +1225,7 @@ body {
 
 .micro-form-btn {
     font-size: 1.2vw;
-    padding: .3vw 2vw
+    
 }
 
 .micro-form-btn-sm {
@@ -1844,7 +1842,7 @@ img.lazyload:not([src]) {
     }
 
     .micro-nav {
-        width: 78%
+       
     }
 
     .micro-nav .nav-icon {
@@ -2369,7 +2367,7 @@ img.lazyload:not([src]) {
 
     .micro-form-btn {
         font-size: 16px;
-        padding: 4px 15px;
+        
         margin: auto;
         display: block
     }
@@ -3432,9 +3430,6 @@ img {
     }
 
     .mob-action .nav-item {
-        
-        
-        width: 60px;
         height: 60px;
         display: flex;
         align-items: center;
@@ -4241,7 +4236,7 @@ iframe {
 
 /* Modal call button styles */
 .modal-call-btn {
-    display: inline-block;
+    display: none;
     justify-content: center;
     width: fit-content;
     padding: 0.5rem 1rem;
@@ -5795,7 +5790,7 @@ p.section-description {
 
 #pricing .col-md-8,
 #pricing .col-md-4 {
-    display: flex;
+    display: fle block;
     flex-direction: column;
 }
 
@@ -5881,7 +5876,7 @@ p.section-description {
 .pricing-feature ul li {
     padding: 12px 0;
     color: #495057;
-    font-size: 1.5rem;
+    
     position: relative;
     padding-left: 30px;
     line-height: 1.6;
@@ -6056,7 +6051,7 @@ p.section-description {
     
     .pricing-feature ul li {
         font-size: 0.9rem;
-        padding: 6px 0;
+        
     }
     
     .at-property-img img {
@@ -6228,7 +6223,7 @@ p.section-description {
 }
 
 /* Responsive Design for Pricing Cards */
-@media (max-width: 768px) {
+@media (max-width: 608px) {
     #pricing .row {
         flex-direction: column;
         margin: 0;
@@ -7354,5 +7349,606 @@ p.section-description {
     .why-choose-item.compact p.small {
         font-size: 0.75rem;
         line-height: 1.3;
+    }
+}
+
+/* ============================================
+   MEDIUM BREAKPOINT FOR TABLETS (768px - 992px)
+   ============================================ */
+@media (min-width: 768px) and (max-width: 992px) {
+    /* Body and Fixed Navbar */
+    body {
+        padding-top: 80px; /* Account for fixed navbar height */
+        padding-bottom: 55px; /* Account for fixed bottom contact bar */
+    }
+    
+    /* Smooth scrolling */
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    /* Scroll offset for anchor links */
+    #home {
+        scroll-margin-top: 80px;
+    }
+    
+    /* Container and Layout */
+    .container-fluid {
+        max-width: 100%;
+        padding: 0 30px;
+    }
+    
+    /* Section */
+    .section {
+        padding: 40px 0;
+    }
+    
+    .section h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    
+    .section-description {
+        font-size: 1rem;
+        max-width: 90%;
+        margin: 0 auto 30px;
+    }
+    
+    /* Pricing Section Layout */
+    .row {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    
+    .col-md-6, .col-md-8, .col-md-4 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    /* Pricing Section Specific */
+    #pricing {
+        padding: 30px 0;
+    }
+    
+    #pricing .section-heading {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    
+    #pricing .section-description {
+        font-size: 0.95rem;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    
+    /* Property Cards */
+    .property-card {
+        margin-bottom: 30px;
+    }
+    
+    .pro-title {
+        font-size: 1.3rem;
+    }
+    
+    /* Buttons and CTAs */
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+    }
+    
+    /* Navigation */
+    .navbar-brand {
+        font-size: 1.3rem !important;
+    }
+    
+    .navbar-nav .nav-link {
+        font-size: 0.95rem !important;
+        padding: 8px 15px !important;
+    }
+    
+    /* Fixed navbar height control */
+    .micro-navbar {
+        min-height: 70px;
+        padding: 8px 0;
+    }
+    
+    .navbar-brand img {
+        max-height: 50px;
+    }
+    
+    /* Pricing and Features */
+    .pricing-feature {
+        padding: 25px 20px;
+        margin-bottom: 25px;
+        min-height: 320px;
+        border-radius: 12px;
+    }
+    
+    .pricing-feature h4 {
+        font-size: 1.2rem !important;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .pricing-feature ul {
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+    
+    .pricing-feature ul li {
+        font-size: 0.95rem;
+        padding: 8px 0;
+        margin-bottom: 8px;
+        list-style: none;
+        position: relative;
+        padding-left: 25px;
+    }
+    
+    .pricing-feature ul li:before {
+        left: 0;
+        font-size: 0.8rem;
+    }
+    
+    /* Simple pricing card for tablet */
+    .simple-pricing-card {
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        height: 100%;
+        min-height: 320px;
+    }
+    
+    .simple-card-content {
+        padding: 20px 15px;
+    }
+    
+    .simple-card-content h4 {
+        font-size: 1.1rem !important;
+        margin-bottom: 15px;
+    }
+    
+    .simple-card-content p {
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+        line-height: 1.4;
+    }
+    
+    .simple-card-btn {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+    
+    /* Typography Adjustments */
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.9rem; }
+    h3 { font-size: 1.6rem; }
+    h4 { font-size: 1.3rem; }
+    h5 { font-size: 1.1rem; }
+    
+    /* Spacing Adjustments */
+    .mb-4 { margin-bottom: 2rem !important; }
+    .mb-5 { margin-bottom: 2.5rem !important; }
+    .py-5 { padding: 2.5rem 0 !important; }
+    
+    /* Content Centering and Overflow Fix */
+    .row {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    
+    .col, .col-md-6, .col-lg-4, .col-sm-12 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    /* Hero Content */
+    .hero-content {
+        text-align: center;
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    
+    /* Download Buttons */
+    .download-btn, .btn-primary {
+        width: auto;
+        max-width: 250px;
+        margin: 10px auto;
+        display: block;
+    }
+    
+    /* Image Responsiveness */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Property Details Box */
+    .property-details {
+        padding: 20px;
+        margin: 20px 0;
+    }
+    
+    /* Contact Section */
+    .contact-section {
+        padding: 30px 20px;
+    }
+    
+    /* Bottom Contact Buttons - Horizontal Layout */
+   
+    
+    /* Hide the quotation form */
+    .form-heading,
+    .form-side,
+    #pardotForm {
+        
+    }
+    
+    .og-section {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    .og-block {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        gap: 8px;
+    }
+    
+    .og-block .nav-item {
+        flex: 1;
+        text-align: center;
+        padding: 12px 8px !important;
+        margin: 0;
+        background-color: var(--light-blue);
+        border-radius: 6px;
+        border: none !important;
+        font-size: 0.8rem;
+        color: white !important;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        min-height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .og-block .nav-item:hover {
+        background-color: var(--primary-color);
+        transform: translateY(-1px);
+    }
+    
+    .og-block .nav-item a {
+        color: white !important;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .og-block .nav-item i {
+        font-size: 1.1rem;
+        margin-right: 0;
+        margin-bottom: 2px;
+    }
+    
+    /* Make the buttons more compact */
+    .og-block .nav-item:first-child {
+        font-size: 0.75rem;
+    }
+    
+    .og-block .nav-item:nth-child(2) i {
+        margin-right: 4px;
+    }
+    
+    /* Hide the separate call back button */
+    .micro-form-btn-sm {
+        display: none !important;
+    }
+    
+    /* WhatsApp button for tablet - bottom right */
+    .whatsapp-btn {
+        display: flex !important;
+        position: fixed;
+        bottom: 70px; /* Above the bottom contact bar */
+        right: 15px;
+        width: 55px;
+        height: 55px;
+        background-color: #25D366;
+        border-radius: 50%;
+        z-index: 1031; /* Above bottom bar */
+        box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+        transition: all 0.3s ease;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .whatsapp-btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+        text-decoration: none;
+    }
+    
+    .whatsapp-btn img,
+    .whatsapp-btn i {
+        width: 28px;
+        height: 28px;
+        color: white;
+        font-size: 28px;
+        filter: brightness(0) invert(1);
+    }
+    
+    /* Modal Responsive Fixes for Tablet */
+    .modal-dialog.enq-modal {
+        max-width: 90vw !important;
+        margin: 1rem !important;
+    }
+    
+    .modal-title {
+        font-size: 1.5rem !important;
+        padding: 15px 0 !important;
+    }
+    
+    .modal-title-secondary {
+        font-size: 1rem !important;
+        line-height: 1.4;
+        margin-bottom: 20px;
+    }
+    
+    .modal-content {
+        border-radius: 8px;
+        padding: 15px;
+    }
+    
+    .modal-body {
+        padding: 20px 15px !important;
+    }
+    
+    .form-control {
+        font-size: 1rem !important;
+        padding: 12px 15px;
+        margin-bottom: 15px;
+    }
+    
+    .btn-info {
+        font-size: 1rem !important;
+        padding: 12px 25px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    /* Mob Action Responsive Fixes for Tablet */
+    .mob-action {
+        padding: 8px 0;
+        height: auto;
+    }
+    
+    .mob-action .nav-item {
+        height: 50px !important;
+        font-size: 20px !important;
+        flex: 1;
+        border-radius: 0;
+    }
+    
+    .mob-action .nav-item a {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    
+    /* Form Check Styling */
+    .form-check {
+        margin: 15px 0 !important;
+    }
+    
+    .form-check-label {
+        font-size: 0.85rem !important;
+        line-height: 1.4;
+    }
+    
+    .modal-body {
+        padding: 20px !important;
+    }
+    
+    .modal-highlight-bg {
+        display: none !important; /* Hide left panel on tablet */
+    }
+    
+    .modal-highlight {
+        display: none !important;
+    }
+    
+    .close {
+        position: absolute;
+        right: 15px !important;
+        top: 10px !important;
+        font-size: 1.5rem;
+        z-index: 1;
+    }
+    
+    /* Form Fields in Modal */
+    .form-control {
+        padding: 12px 15px;
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+    
+    .form-check {
+        margin: 20px 0;
+    }
+    
+    .form-check-label {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+    
+    /* Submit Button in Modal */
+    .modal-body .btn {
+        width: 100%;
+        padding: 15px;
+        font-size: 1.1rem;
+        margin-top: 10px;
+    }
+    
+    /* Mob Action - Not displayed on tablet (we use bottom bar instead) */
+    .mob-action {
+        display: none !important;
+    }
+    
+    /* Hero Section and Info Box - Tablet Specific */
+    .hero-banner {
+        position: relative;
+        margin-bottom: 0;
+    }
+    
+    .hero-banner img {
+        height: 50vh !important;
+        object-fit: cover !important;
+        width: 100% !important;
+    }
+    
+    .info-box {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        width: 100% !important;
+        margin-top: 0 !important;
+        padding: 30px 20px !important;
+        background-color: #fff;
+        border-radius: 8px;
+        border: 1px solid #eee;
+        z-index: 10;
+        text-align: center;
+    }
+    
+    .pro-title {
+        font-size: 1.8rem !important;
+        line-height: 2rem !important;
+        padding: 15px 10px 10px !important;
+        color: var(--primary-color);
+    }
+    
+    .pro-add {
+        font-size: 1rem;
+        padding: 5px 10px;
+        color: #666;
+    }
+    
+    .card-d-custom {
+        margin: 20px 0;
+        justify-content: center;
+    }
+    
+    .card-d-custom > div {
+        margin: 0 15px;
+        text-align: center;
+    }
+    
+    .pro-price {
+        font-size: 1.3rem;
+        margin: 15px 0;
+    }
+    
+    .micro-form-btn {
+        
+        max-width: 250px;
+        display: block;
+    }
+}
+
+/* ============================================
+   MOBILE RESPONSIVE FIXES (MAX-WIDTH: 576px)
+   ============================================ */
+@media (max-width: 576px) {
+    /* Modal Responsive Fixes for Mobile */
+    .modal-dialog.enq-modal {
+        max-width: 95vw !important;
+        margin: 0.5rem !important;
+    }
+    
+    .modal-content {
+        border-radius: 6px;
+        padding: 10px;
+    }
+    
+    .modal-body {
+        padding: 15px 10px !important;
+    }
+    
+    .modal-title {
+        font-size: 1.3rem !important;
+        padding: 10px 0 !important;
+    }
+    
+    .modal-title-secondary {
+        font-size: 0.9rem !important;
+        line-height: 1.3;
+        margin-bottom: 15px;
+    }
+    
+    .form-control {
+        font-size: 0.9rem !important;
+        padding: 10px 12px;
+        margin-bottom: 12px;
+    }
+    
+    .btn-info {
+        font-size: 0.9rem !important;
+        padding: 10px 20px;
+        width: 100%;
+        
+    }
+    
+    .form-check-label {
+        font-size: 0.75rem !important;
+        line-height: 1.3;
+    }
+    
+    /* Mob Action Mobile Fixes */
+    .mob-action {
+        padding: 5px 0;
+        height: auto;
+    }
+    
+    .mob-action .nav-item {
+                padding: 7px 5px;
+        text-align: left;
+        font-size: 14px;
+        width: 32%;
+        display: inline-flex
+;
+        flex-direction: row;
+        align-items: center;
+        line-height: 16px;
+        justify-content: center;
+    }
+    
+    .mob-action .nav-item a {
+        padding: 8px 5px;
+        font-size: 0.8rem;
+        flex-direction: column;
+    }
+    
+    .mob-action .nav-item i {
+        font-size: 16px;
+        margin-bottom: 2px;
+    }
+    
+    /* Close button mobile fix */
+    .close {
+        position: absolute;
+        right: 10px !important;
+        top: 10px !important;
+        font-size: 1.5rem;
+        z-index: 1001;
     }
 }
