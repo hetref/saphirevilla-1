@@ -1383,6 +1383,18 @@ img.lazyload:not([src]) {
     border: none
 }
 
+/* Remove rocking animation from nav-item elements only */
+.nav-item.effetMoveGradient, .nav-item.effetMoveGradient:hover {
+    -webkit-animation: 3s infinite Gradient;
+    -moz-animation: 3s infinite Gradient;
+    animation: 3s 2s infinite Gradient;
+}
+
+/* Remove border-radius from nav-item elements */
+.nav-item {
+    border-radius: 0 !important;
+}
+
 .effetGradient, .effetGradient:hover {
     text-shadow: 0 3px 6px var(--colorPrimary);
     background-color: var(--colorPrimary);
@@ -1718,9 +1730,7 @@ img.lazyload:not([src]) {
         max-width: 66.666667%
     }
 
-    .d-md-none {
-        display: none !important
-    }
+    
 
     .float-md-right {
         float: right !important
@@ -2888,9 +2898,7 @@ img.lazyload:not([src]) {
     transform: translateX(-100%);
 }
 
-.d-block {
-    display: block !important;
-}
+
 
 img {
     vertical-align: middle;
@@ -3421,11 +3429,7 @@ img {
     
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-    .d-md-none {
-        display: none !important;
-    }
-}
+
 
 @media (min-width: 576px) and (max-width: 767px) {
        
@@ -4334,8 +4338,27 @@ p.section-description {
     }
 }
 
-.wellness-content {
+   .wellness-content {
        padding: 20px 0;
+   }
+   
+   /* Ensure equal width columns for wellness cards */
+   .wellness-features {
+       display: flex;
+       flex-wrap: wrap;
+       align-items: stretch;
+       gap: 15px;
+       justify-content: center;
+       
+       max-width: 1200px;
+   }
+   
+   .wellness-features .col-md-6.col-lg-3 {
+       display: flex;
+       align-items: stretch;
+       flex: 0 0 320px;
+       max-width: 320px;
+       min-width: 320px;
    }
   
    .wellness-card {
@@ -4343,14 +4366,14 @@ p.section-description {
        border-radius: 15px;
        overflow: hidden;
        transition: all 0.3s ease;
-       height: 100%;
-       min-height: 380px;
+       height: 400px;
+       min-height: 400px;
+       max-height: 400px;
        border: 1px solid #e9ecef !important;
        display: flex;
        flex-direction: column;
-   }
-  
-   .wellness-card:hover {
+       width: 100%;
+   }   .wellness-card:hover {
        transform: translateY(-8px);
        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
        text-decoration: none;
@@ -4430,6 +4453,10 @@ p.section-description {
        border-top: 1px solid #f1f3f4;
        padding-top: 12px;
        text-align: left;
+       min-height: 50px;
+       display: flex;
+       flex-direction: column;
+       justify-content: flex-start;
    }
   
    .wellness-features-list i {
@@ -4480,10 +4507,21 @@ p.section-description {
   
        .wellness-card-body {
            padding: 15px;
+           width: 100%;
        }
   
        .wellness-card-title {
            font-size: 1.1rem;
+       }
+       
+       .wellness-card-text {
+           font-size: 0.85rem;
+           margin-bottom: 12px;
+       }
+       
+       .wellness-features-list {
+           font-size: 0.8rem;
+           min-height: 40px;
        }
   
        .wellness-additional-features {
@@ -4493,11 +4531,70 @@ p.section-description {
        .section-subheading {
            font-size: 1.3rem;
        }
+       
+       .wellness-features {
+           justify-content: center;
+           margin: 0 auto;
+           gap: 10px;
+       }
+       
+       .wellness-features .col-md-6.col-lg-3 {
+           margin-bottom: 20px;
+           flex: 0 0 340px;
+           max-width: 340px;
+           min-width: 340px;
+       }
+       
+       .wellness-card {
+           height: 380px;
+           min-height: 380px;
+           max-height: 380px;
+       }
    }
   
    @media (max-width: 576px) {
        .wellness-img-wrapper {
            height: 160px;
+       }
+       
+       .wellness-card {
+           margin: 0 10px 20px;
+           height: 360px;
+           min-height: 360px;
+           max-height: 360px;
+       }
+       
+       .wellness-features .col-md-6.col-lg-3 {
+           flex: 0 0 300px;
+           max-width: 300px;
+           min-width: 300px;
+       }
+       
+       .wellness-card-body {
+           padding: 12px;
+           width: 100%;
+       }
+       
+       .wellness-card-title {
+           font-size: 1rem;
+           margin-bottom: 8px;
+       }
+       
+       .wellness-card-text {
+           font-size: 0.8rem;
+           margin-bottom: 10px;
+           line-height: 1.4;
+       }
+       
+       .wellness-features-list {
+           font-size: 0.75rem;
+           min-height: 35px;
+           padding-top: 10px;
+       }
+       
+       .wellness-features-list i {
+           width: 14px;
+           margin-right: 5px;
        }
   
        .wellness-feature-icon {
@@ -4506,6 +4603,122 @@ p.section-description {
   
        .wellness-feature-icon i {
            font-size: 1.5rem !important;
+       }
+       
+       .wellness-additional-features {
+           padding: 15px;
+           margin-top: 15px;
+       }
+       
+       .section-subheading {
+           font-size: 1.2rem;
+       }
+   }
+   
+   @media (max-width: 480px) {
+       .wellness-card {
+           margin: 0 5px 15px;
+           height: 340px;
+           min-height: 340px;
+           max-height: 340px;
+       }
+       
+       .wellness-features .col-md-6.col-lg-3 {
+           flex: 0 0 280px;
+           max-width: 280px;
+           min-width: 280px;
+       }
+       
+       .wellness-img-wrapper {
+           height: 140px;
+       }
+       
+       .wellness-card-body {
+           padding: 10px;
+       }
+       
+       .wellness-card-title {
+           font-size: 0.95rem;
+           margin-bottom: 6px;
+       }
+       
+       .wellness-card-text {
+           font-size: 0.75rem;
+           margin-bottom: 8px;
+           line-height: 1.3;
+       }
+       
+       .wellness-features-list {
+           font-size: 0.7rem;
+           min-height: 30px;
+           padding-top: 8px;
+       }
+       
+       .wellness-additional-features {
+           padding: 12px;
+           margin-top: 12px;
+       }
+       
+       .section-subheading {
+           font-size: 1.1rem;
+       }
+       
+       .wellness-features {
+           padding: 0 5px;
+       }
+   }
+   
+   @media (max-width: 360px) {
+       .wellness-card {
+           margin: 0 2px 12px;
+           height: 320px;
+           min-height: 320px;
+           max-height: 320px;
+       }
+       
+       .wellness-features .col-md-6.col-lg-3 {
+           flex: 0 0 260px;
+           max-width: 260px;
+           min-width: 260px;
+       }
+       
+       .wellness-img-wrapper {
+           height: 120px;
+       }
+       
+       .wellness-card-body {
+           padding: 8px;
+       }
+       
+       .wellness-card-title {
+           font-size: 0.9rem;
+           margin-bottom: 5px;
+       }
+       
+       .wellness-card-text {
+           font-size: 0.7rem;
+           margin-bottom: 6px;
+           line-height: 1.2;
+       }
+       
+       .wellness-features-list {
+           font-size: 0.65rem;
+           min-height: 25px;
+           padding-top: 6px;
+       }
+       
+       .wellness-features-list i {
+           width: 12px;
+           margin-right: 4px;
+       }
+       
+       .wellness-additional-features {
+           padding: 10px;
+           margin-top: 10px;
+       }
+       
+       .section-subheading {
+           font-size: 1rem;
        }
    }
   
@@ -6586,6 +6799,37 @@ p.section-description {
 }
 
 /* ============================================
+   HERO BANNER GENERAL RESPONSIVE RULES
+   ============================================ */
+
+/* Ensure hero banner is always visible on all screen sizes */
+.hero-banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-banner img {
+    display: block;
+    width: 100%;
+    height: 700px;
+}
+
+/* Default responsive behavior for desktop images */
+.hero-banner .d-none.d-md-block {
+    object-fit: cover !important;
+    aspect-ratio: 3 / 4 !important;
+    height: 1200px !important;
+}
+
+/* Default responsive behavior for mobile images */
+.hero-banner .d-block.d-md-none {
+    object-fit: contain;
+    aspect-ratio: 3 / 4;
+    min-height: 200px;
+}
+
+/* ============================================
    COMPREHENSIVE RESPONSIVE DESIGN FOR ALL SECTIONS
    ============================================ */
 
@@ -6676,7 +6920,7 @@ p.section-description {
     /* Wellness Section */
     .wellness-card {
         margin-bottom: 20px;
-        min-height: 320px;
+        min-height: 400px;
     }
     
     .wellness-img-wrapper {
@@ -6742,6 +6986,60 @@ p.section-description {
         padding: 14px 25px;
         font-size: 1rem;
     }
+    
+    /* Wellness Section */
+    .wellness-features {
+        gap: 8px;
+        justify-content: center;
+    }
+    
+    .wellness-features .col-md-6.col-lg-3 {
+        flex: 0 0 280px;
+        max-width: 280px;
+        min-width: 280px;
+        margin-bottom: 15px;
+    }
+    
+    .wellness-card {
+        margin: 0 8px;
+        height: 300px;
+        min-height: 300px;
+        max-height: 300px;
+    }
+    
+    .wellness-img-wrapper {
+        height: 120px;
+    }
+    
+    .wellness-card-body {
+        padding: 10px;
+    }
+    
+    .wellness-card-title {
+        font-size: 0.9rem;
+        margin-bottom: 6px;
+    }
+    
+    .wellness-card-text {
+        font-size: 0.75rem;
+        margin-bottom: 6px;
+        line-height: 1.2;
+    }
+    
+    .wellness-features-list {
+        font-size: 0.65rem;
+        min-height: 25px;
+        padding-top: 6px;
+    }
+    
+    .wellness-additional-features {
+        padding: 10px;
+        margin-top: 10px;
+    }
+    
+    .section-subheading {
+        font-size: 1rem;
+    }
 }
 
 /* Small Devices (landscape phones, 576px to 767px) */
@@ -6754,6 +7052,20 @@ p.section-description {
         font-size: 1.75rem;
     }
     
+    /* Hero Banner Small Tablet Responsive */
+    .hero-banner .d-block.d-md-none {
+        object-fit: contain;
+        aspect-ratio: 3 / 4;
+        height: 280px;
+        margin-top: 70px;
+    }
+    
+    .hero-banner .d-none.d-md-block {
+        object-fit: cover;
+        aspect-ratio: 3 / 4;
+        height: 1200px;
+    }
+    
     /* Interior Grid */
     .interior-features .col-md-6 {
         flex: 0 0 100%;
@@ -6761,9 +7073,48 @@ p.section-description {
     }
     
     /* Wellness Grid */
+    .wellness-features {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: center;
+        gap: 10px;
+    }
+    
     .wellness-features .col-lg-3 {
-        flex: 0 0 50%;
-        max-width: 50%;
+        flex: 0 0 320px;
+        max-width: 320px;
+        min-width: 320px;
+        display: flex;
+        align-items: stretch;
+    }
+    
+    .wellness-card {
+        height: 360px;
+        min-height: 360px;
+        max-height: 360px;
+    }
+    
+    .wellness-img-wrapper {
+        height: 150px;
+    }
+    
+    .wellness-card-body {
+        padding: 12px;
+    }
+    
+    .wellness-card-title {
+        font-size: 1rem;
+    }
+    
+    .wellness-card-text {
+        font-size: 0.8rem;
+        margin-bottom: 8px;
+    }
+    
+    .wellness-features-list {
+        font-size: 0.75rem;
+        min-height: 30px;
     }
     
     /* Testimonials Grid */
@@ -6789,6 +7140,18 @@ p.section-description {
         font-size: 2rem;
     }
     
+    /* Hero Banner Medium Tablet Responsive */
+    .hero-banner .d-none.d-md-block {
+        object-fit: contain;
+        aspect-ratio: 3 / 4;
+        height: 1200px;
+        width: 100%;
+    }
+    
+    .hero-banner .d-block.d-md-none {
+        height: 1100px;
+    }
+    
     /* Priority Section Adjustments */
     .priority-info-card {
         margin-bottom: 30px;
@@ -6804,13 +7167,21 @@ p.section-description {
     }
     
     /* Wellness Section */
+    .wellness-features {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+    
     .wellness-features .col-lg-3 {
         flex: 0 0 50%;
         max-width: 50%;
+        display: flex;
+        align-items: stretch;
     }
     
     .wellness-card {
-        min-height: 350px;
+        min-height: 400px;
     }
     
     /* Gallery */
@@ -6830,14 +7201,44 @@ p.section-description {
         padding: 35px 40px;
     }
     
+    /* Hero Banner Large Desktop Responsive */
+    .hero-banner .d-none.d-md-block {
+        object-fit: cover !important;
+        aspect-ratio: 3 / 4 !important;
+        height: 1200px !important;
+        width: 100% !important;
+    }
+    
+
+    
     /* Interior Images */
     .interior-image {
         height: 200px;
     }
     
     /* Wellness Cards */
+    .wellness-features {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+    
+    .wellness-features .col-md-6.col-lg-3 {
+        display: flex;
+        align-items: stretch;
+        flex: 0 0 320px;
+        max-width: 320px;
+        min-width: 320px;
+    }
+    
     .wellness-card {
-        min-height: 320px;
+        height: 400px;
+        min-height: 400px;
+        max-height: 400px;
+        width: 100%;
     }
     
     /* Gallery Thumbnails */
@@ -6856,14 +7257,46 @@ p.section-description {
         font-size: 2.5rem;
     }
     
+    /* Hero Banner Extra Large Desktop Responsive */
+    .hero-banner .d-none.d-md-block {
+        object-fit: cover !important;
+        aspect-ratio: 3 / 4 !important;
+        height: 1200px !important;
+        width: 100% !important;
+    }
+    
+    .hero-banner .d-block.d-md-none {
+       height: 1000px;
+    }
+    
     /* Interior Images */
     .interior-image {
         height: 220px;
     }
     
     /* Wellness Cards */
+    .wellness-features {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: center;
+        
+        max-width: 1200px;
+    }
+    
+    .wellness-features .col-md-6.col-lg-3 {
+        display: flex;
+        align-items: stretch;
+        flex: 0 0 320px;
+        max-width: 320px;
+        min-width: 320px;
+    }
+    
     .wellness-card {
-        min-height: 380px;
+        height: 400px;
+        min-height: 400px;
+        max-height: 400px;
+        width: 100%;
     }
     
     /* Gallery Thumbnails */
@@ -6879,7 +7312,7 @@ p.section-description {
 }
 
 /* Ultra Wide Screens (1400px and up) */
-@media (min-width: 1400px) {
+@media (min-width: 1440px) {
     .section {
         padding: 50px 60px;
     }
@@ -6888,6 +7321,16 @@ p.section-description {
         max-width: 1400px;
         margin: 0 auto;
     }
+    
+    /* Hero Banner Ultra Wide Desktop Responsive */
+    .hero-banner .d-none.d-md-block {
+        object-fit: cover !important;
+        aspect-ratio: 3 / 4 !important;
+        height: 1200px !important;
+        width: 100% !important;
+    }
+    
+   
     
     /* Typography Scaling */
     .section h2 {
@@ -6898,6 +7341,31 @@ p.section-description {
         font-size: 1.2rem;
         max-width: 800px;
         margin: 0 auto 40px;
+    }
+    
+    /* Wellness Cards */
+    .wellness-features {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-evenly;
+        
+        max-width: none;
+    }
+    
+    .wellness-features .col-md-6.col-lg-3 {
+        display: flex;
+        align-items: stretch;
+        flex: 0 0 320px;
+        max-width: 320px;
+        min-width: 320px;
+    }
+    
+    .wellness-card {
+        height: 400px;
+        min-height: 400px;
+        max-height: 400px;
+        width: 100%;
     }
 }
 
@@ -7682,8 +8150,9 @@ p.section-description {
     }
     
     .hero-banner img {
-        height: 50vh !important;
-        object-fit: cover !important;
+        object-fit: contain !important;
+        aspect-ratio: 3 / 4 !important;
+        height: 360px !important;
         width: 100% !important;
     }
     
@@ -7784,9 +8253,23 @@ p.section-description {
         line-height: 1.3;
     }
     
+    /* Hero Banner Mobile Responsive */
+    .hero-banner .d-block.d-md-none {
+        object-fit: contain;
+        aspect-ratio: 3 / 4;
+        height: 200px;
+        margin-top: 60px;
+    }
+    
+    /* Hero Banner - Ensure visibility on all mobile screens */
+    .hero-banner img {
+        display: block !important;
+        width: 100% !important;
+    }
+    
     /* Mob Action Mobile Fixes */
     .mob-action {
-        padding: 5px 0;
+        
         height: auto;
     }
     
