@@ -303,6 +303,7 @@ html {
     scroll-behavior: smooth
 }
 
+
 :root {
     --blue: #007bff;
     --indigo: #6610f2;
@@ -1841,9 +1842,7 @@ img.lazyload:not([src]) {
         margin: 0 auto
     }
 
-    .micro-nav {
-       
-    }
+    
 
     .micro-nav .nav-icon {
         margin-right: 3px;
@@ -1997,7 +1996,7 @@ img.lazyload:not([src]) {
     .info-box span.heading2 {
         color: #000;
         font-weight: 400;
-        width: 6vw !important;
+        
         display: inline-block
     }
 
@@ -2567,7 +2566,26 @@ img.lazyload:not([src]) {
         max-width: 235px
     }
 }
-
+@media only screen and (min-width: 992px) {
+    .micro-main-slider, .micro-nav {
+        width: 80%
+    }
+    .navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    
+}
+}
+@media only screen and (max-width: 1300px) {
+   
+    .navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    
+}
+}
 @media only screen and (min-width: 1600px) {
     .micro-main-slider, .micro-nav {
         width: 80%
@@ -6292,7 +6310,8 @@ p.section-description {
     .pricing-feature ul li {
         font-size: 0.9rem;
         padding: 8px 0;
-        padding-left: 22px;
+        padding-left: 20px;
+        text-align: center;
     }
     
     .simple-pricing-card {
