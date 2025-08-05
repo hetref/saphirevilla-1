@@ -1,10 +1,10 @@
 ﻿/*@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);*/
 
-/* Custom Font Families */
+/* Enhanced Font System for Luxury Real Estate */
 :root {
-    --header-font: 'Playfair Display', serif;
-    --description-font: 'Noto Sans', sans-serif;
-    --body-font: 'Noto Sans', sans-serif;
+    --header-font: 'Cormorant Garamond', serif;
+    --body-font: 'Cormorant Garamond', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --description-font: 'Cormorant Garamond', sans-serif;
     
     /* Color Theme */
     --dark-blue: #27276D;
@@ -20,31 +20,74 @@
     font-family: var(--body-font);
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-/* Headers use Playfair Display */
+/* Headers use Playfair Display for elegance */
 h1, h2, h3, h4, h5, h6,
 .head, .section-heading, .pro-title,
 .modal-title, .modal-title-secondary {
     font-family: var(--header-font) !important;
     font-weight: 600;
+    letter-spacing: -0.02em;
 }
 
-/* Descriptions use Noto Sans */
-p, .section-description, .desktopview,
+/* Body text uses Inter for maximum readability */
+body, p, .section-description, .desktopview,
 .developer-description, .priority-description,
 .testimonial-quote p, .wellness-card-text,
-.interior-details, .priority-benefit-item p {
-    font-family: var(--description-font) !important;
+.interior-details, .priority-benefit-item p,
+.nav-link, .btn, button, input, textarea,
+.form-control, .pricing-feature ul li,
+.modal-body, .disclaimer-text {
+    font-family: var(--body-font) !important;
+    font-weight: 400;
+    line-height: 1.6;
 }
 
-/* Additional elements for header font */
+/* Headings and special elements use Playfair Display for elegance */
 .pro-tag-line, .offer-text, .form-heading,
 .wellness-card-title, .testimonial-card h5,
-.why-choose-item h5, .stat-label,
+.why-choose-item h5, .developer-feature-item h4,
 .address-details h4, .rera-details h4,
-.contact-info-card h5 {
+.contact-info-card h5, .simple-card-content h4,
+.plan-card-footer h5, .interior-details h4 {
     font-family: var(--header-font) !important;
+    font-weight: 500;
+}
+
+/* Enhanced Typography Styles */
+body {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #333;
+}
+
+h1 { font-size: 2.5rem; font-weight: 700; line-height: 1.2; }
+h2 { font-size: 2.25rem; font-weight: 600; line-height: 1.3; }
+h3 { font-size: 1.875rem; font-weight: 600; line-height: 1.3; }
+h4 { font-size: 1.5rem; font-weight: 600; line-height: 1.4; }
+h5 { font-size: 1.25rem; font-weight: 500; line-height: 1.4; }
+h6 { font-size: 1.125rem; font-weight: 500; line-height: 1.4; }
+
+/* Improved readability for key elements */
+.section-description {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #666;
+}
+
+.btn {
+    font-weight: 500;
+    letter-spacing: 0.025em;
+}
+
+.nav-link {
+    font-weight: 500;
+    font-size: 0.95rem;
 }
 
 /* Additional elements for description font */
@@ -883,10 +926,12 @@ select.form-control:focus::-ms-value {
 .navbar-light .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
 }
-
+#pardotForm {
+    padding: 15px;
+}
 .close {
     float: right;
-    font-size: 1.5rem;
+    font-size: 3.5rem;
     font-weight: 700;
     line-height: 1;
     color: #000;
@@ -4081,7 +4126,7 @@ iframe {
 }
 
 .disclaimer-text {
-    font-size: 11px;
+    font-size: 1rem;
 }
 
 .rera-text {
@@ -4097,7 +4142,7 @@ iframe {
 
 /* Form label styles */
 .form-check-label {
-    font-size: 12px;
+    font-size: 17px;
     text-align: left;
     color: #000;
 }
@@ -4179,7 +4224,7 @@ iframe {
 
 .interior-details h4 {
     color: var(--colorPrimary);
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 15px;
     line-height: 1.3;
@@ -4195,7 +4240,7 @@ iframe {
 .interior-details li {
     padding: 8px 0;
     border-bottom: 1px solid #f0f0f0;
-    font-size: 0.95rem;
+    font-size: 1.15rem;
     color: #555;
     position: relative;
     padding-left: 20px;
@@ -4275,7 +4320,7 @@ iframe {
 
 .interiors-content .section-description {
     color: #666;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 40px;
     text-align: left !important;
@@ -4290,7 +4335,7 @@ iframe {
 
 /* Additional specificity for interior section description */
 #interiors .interiors-content p.section-description {
-    text-align: left !important;
+    text-align: justify !important;
     margin-left: 0 !important;
     padding-left: 0 !important;
     float: none !important;
@@ -4300,7 +4345,7 @@ iframe {
 
 /* Additional specificity for wellness section description */
 #wellness .wellness-content p.section-description {
-    text-align: left !important;
+    text-align: justify !important;
     margin-left: 0 !important;
     padding-left: 0 !important;
     float: none !important;
@@ -4311,7 +4356,7 @@ iframe {
 /* Universal section description left alignment */
 .section-description,
 p.section-description {
-    text-align: left !important;
+    text-align: justify !important;
     margin-left: 0 !important;
     padding-left: 0 !important;
     float: none !important;
@@ -4325,7 +4370,7 @@ p.section-description {
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 40px;
-    text-align: left;
+    text-align: justify;
     max-width: 800px;
     margin-left: 0;
     margin-right: auto;
@@ -4775,7 +4820,7 @@ p.section-description {
 
 .testimonial-quote p {
     font-style: italic;
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.6;
     color: #495057;
     margin-left: 20px;
@@ -4804,7 +4849,7 @@ p.section-description {
     margin-bottom: 5px;
     color: #2c3e50;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 
 .author-details span {
@@ -4871,7 +4916,7 @@ p.section-description {
 }
 
 .priority-content {
-    padding: 40px 0;
+    
     position: relative;
 }
 
@@ -4917,7 +4962,7 @@ p.section-description {
 }
 
 .priority-description {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     line-height: 1.6;
     margin-bottom: 25px;
     color: #495057;
@@ -4931,7 +4976,7 @@ p.section-description {
     display: flex;
     align-items: center;
     margin-bottom: 12px;
-    font-size: 0.95rem;
+    font-size: 1.3rem;
     color: #495057;
 }
 
@@ -5040,7 +5085,7 @@ p.section-description {
 }
 
 .priority-benefit-item h5 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: var(--colorSecondary);
     margin-bottom: 12px;
@@ -5048,7 +5093,7 @@ p.section-description {
 
 .priority-benefit-item p {
     color: #6c757d;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     line-height: 1.5;
     margin-bottom: 0;
 }
@@ -6269,7 +6314,7 @@ p.section-description {
 }
 
 .simple-card-content h4 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 600;
     color: var(--colorPrimary);
     margin-bottom: 15px;
@@ -6277,7 +6322,7 @@ p.section-description {
 
 .simple-card-content p {
     color: #6c757d;
-    font-size: 0.95rem;
+    font-size: 1.2rem;
     line-height: 1.5;
     margin-bottom: 20px;
 }
@@ -6705,7 +6750,7 @@ p.section-description {
 
 .address-details h4, .rera-details h4 {
     color: var(--colorPrimary);
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -6713,12 +6758,13 @@ p.section-description {
 .address-details p {
     margin-bottom: 5px;
     line-height: 1.4;
+    text-align: unset;
 }
 
 .rera-number {
     font-weight: 600;
     color: var(--colorSecondary);
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-family: monospace;
     word-break: break-all;
 }
@@ -6785,6 +6831,7 @@ p.section-description {
         padding: 15px;
         flex-direction: column;
         text-align: center;
+        align-items: center;
     }
     
     .address-icon, .rera-icon {
@@ -6838,6 +6885,7 @@ p.section-description {
     /* General Section Styles */
     .section {
         padding: 20px 15px;
+        padding-bottom: 100px;
     }
     
     .section h2 {
@@ -7455,7 +7503,7 @@ p.section-description {
 /* Logo optimizations */
 .logo {
     height: auto;
-    max-width: 100%;
+    max-width: 100px;
     object-fit: contain;
 }
 
@@ -7549,7 +7597,7 @@ p.section-description {
 }
 
 .why-choose-item.compact h5 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
     color: #2c3e50;
@@ -7557,7 +7605,7 @@ p.section-description {
 }
 
 .why-choose-item.compact p.small {
-    font-size: 0.875rem;
+    font-size: 1rem;
     color: #6c757d;
     line-height: 1.4;
     margin-bottom: 0;
@@ -7605,7 +7653,7 @@ p.section-description {
 }
 
 .why-choose-content .section-description {
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: center;
     max-width: 800px;
     margin: 0 auto 1.5rem;
@@ -8217,12 +8265,9 @@ p.section-description {
     
     .modal-content {
         border-radius: 6px;
-        padding: 10px;
+        
     }
-    
-    .modal-body {
-        padding: 15px 10px !important;
-    }
+   
     
     .modal-title {
         font-size: 1.3rem !important;
@@ -8271,6 +8316,7 @@ p.section-description {
     .mob-action {
         
         height: auto;
+       
     }
     
     .mob-action .nav-item {
@@ -8301,7 +8347,7 @@ p.section-description {
     .close {
         position: absolute;
         right: 10px !important;
-        top: 10px !important;
+        
         font-size: 1.5rem;
         z-index: 1001;
     }
