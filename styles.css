@@ -478,7 +478,7 @@ select {
 }
 
 .h1, h1, h2, h5 {
-    margin-bottom: .5rem;
+    margin-bottom: 0rem;
     font-weight: 500;
     line-height: 1.2
 }
@@ -508,7 +508,7 @@ hr {
 }
 
 small {
-    font-size: 80%;
+    font-size: 90%;
     font-weight: 400
 }
 
@@ -518,14 +518,15 @@ small {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-right: -15px;
-    margin-left: -15px
+    margin-left: -15px;
+    margin-bottom: 20px;
 }
 
 .col, .col-12, .col-6, .col-lg-3, .col-md-3, .col-md-4, .col-md-6, .col-md-8, .col-sm-6 {
     position: relative;
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px
+    padding-right: 10px;
+    padding-left: 10px
 }
 
 .btn, .form-control {
@@ -2676,7 +2677,7 @@ img.lazyload:not([src]) {
 
     .section .head {
         font-size: 24px;
-        padding-bottom: 10px;
+        
         display: block;
         text-align: center;
         font-weight: 700;
@@ -4314,9 +4315,7 @@ iframe {
 }
 
 /* Interior section description styling */
-.interiors-content {
-    margin-top: 30px;
-}
+
 
 .interiors-content .section-description {
     color: #666;
@@ -4383,9 +4382,7 @@ p.section-description {
     }
 }
 
-   .wellness-content {
-       padding: 20px 0;
-   }
+   
    
    /* Ensure equal width columns for wellness cards */
    .wellness-features {
@@ -4780,9 +4777,7 @@ p.section-description {
        color: #007bff;
    }
    /* Testimonials Section Styling */
-.testimonials-content {
-    padding: 20px 0;
-}
+
 
 .testimonials-grid {
     margin-top: 30px;
@@ -5365,9 +5360,7 @@ p.section-description {
 }
 
 /* Developer Section Enhanced Styling */
-.developer-content {
-    padding: 20px 0;
-}
+
 
 .developer-features-section {
     margin-top: 30px;
@@ -6890,7 +6883,7 @@ p.section-description {
     
     .section h2 {
         font-size: 1.5rem;
-        margin-bottom: 20px;
+       
         text-align: center;
     }
     
@@ -7020,7 +7013,7 @@ p.section-description {
     
     /* Contact Info Cards */
     .contact-info-card {
-        padding: 20px 15px;
+        padding: 0px 15px;
         margin-bottom: 20px;
     }
     
@@ -7043,8 +7036,8 @@ p.section-description {
     
     .wellness-features .col-md-6.col-lg-3 {
         flex: 0 0 280px;
-        max-width: 280px;
-        min-width: 280px;
+        max-width: 380px;
+        min-width: 380px;
         margin-bottom: 15px;
     }
     
@@ -7060,11 +7053,11 @@ p.section-description {
     }
     
     .wellness-card-body {
-        padding: 10px;
+        padding: 28px 15px;
     }
     
     .wellness-card-title {
-        font-size: 0.9rem;
+        font-size: 1.4rem;
         margin-bottom: 6px;
     }
     
@@ -7235,6 +7228,7 @@ p.section-description {
     /* Gallery */
     .gallery-thumb {
         height: 180px;
+        
     }
     
     /* Developer Section */
@@ -7532,7 +7526,8 @@ p.section-description {
     }
     
     .gallery-thumb {
-        height: 120px;
+        height: 180px;
+        
     }
 }
 
@@ -7714,6 +7709,7 @@ p.section-description {
     .why-choose-content .section-description {
         font-size: 0.95rem;
         margin-bottom: 1rem;
+        padding-top: 10px;
     }
 }
 
