@@ -6878,7 +6878,7 @@ p.section-description {
     /* General Section Styles */
     .section {
         padding: 20px 15px;
-        padding-bottom: 100px;
+        padding-bottom: 50px;
     }
     
     .section h2 {
@@ -7709,7 +7709,7 @@ p.section-description {
     .why-choose-content .section-description {
         font-size: 0.95rem;
         margin-bottom: 1rem;
-        padding-top: 10px;
+        
     }
 }
 
